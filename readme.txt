@@ -1,6 +1,12 @@
 README
 ------
 
+Requires 
+	- Python 2.7.10
+	- urllib2
+	- selenium 2.53.1
+	- BeautifulSoup 4
+
 
 1. __init__.py starts the program.
 
