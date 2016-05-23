@@ -16,7 +16,7 @@ class grab:
         # Start the WebDriver and load the page
         wd = webdriver.Firefox()
         wd.get(self.url)
-        wd.implicitly_wait(10)
+        wd.implicitly_wait(5)
         path = "../files/" + path
         fo1 = codecs.open(path, "w+", "utf-8")
         page_tree_str = wd.page_source
