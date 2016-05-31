@@ -19,7 +19,8 @@ Requires
 	- comp_tree.html is constructed using visit2.html. This has additioanl meta data added by us on compared page.
 	- the additional meta data is level, id, hash, etc...
 	- base_diff.txt has list of element identifiers that are different between the two visits.
-	
+
+***the attribute 'id' is used as 'id_diff_z1z' to ensure uniqueness because somepages alredy have 'id' as attributes ***
 
 	Eg.
 
