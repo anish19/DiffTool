@@ -16,14 +16,16 @@ class PageTreeDiff(object):
 	ref_max_level = 0
 	diff_hash_list = [] #list of diff hashes between ref_map and comp_map
 	diff_id_list = []   #list of diff ids between ref_map and comp_map
+	folder = ""
 
-	def __init__(self,ref_tree,ref_max_level,comp_tree,comp_max_level ):
+	def __init__(self,ref_tree,ref_max_level,comp_tree,comp_max_level,folder ):
 		self.ref_tree = ref_tree
 		self.ref_max_level = ref_max_level
 		self.comp_tree = comp_tree
 		self.comp_max_level = comp_max_level
 		self.__build_ref_tree(ref_tree)
 		self.__build_comp_tree(comp_tree)
+		self.folder = folder
 
 	def __build_ref_tree(self, tree):
 		if not isinstance(tree, NavigableString):
@@ -31,8 +33,8 @@ class PageTreeDiff(object):
 				if len(child) > 0:
 					# print "----"
 					if not isinstance(child, NavigableString):
-						self.ref_map[child['id']] = child['hash']
-						self.ref_id_ele_map[child['id']] = child
+						self.ref_map[child['id_diff_z1z']] = child['hash']
+						self.ref_id_ele_map[child['id_diff_z1z']] = child
 						self.ref_count += 1
 					# print child
 					# print "====="
@@ -49,8 +51,8 @@ class PageTreeDiff(object):
 			for child in tree.children:
 				if len(child) > 0:
 					if not isinstance(child, NavigableString):
-						self.comp_map[child['id']] = child['hash']
-						self.comp_id_ele_map[child['id']] = child
+						self.comp_map[child['id_diff_z1z']] = child['hash']
+						self.comp_id_ele_map[child['id_diff_z1z']] = child
 						self.comp_count += 1
 					self.__build_comp_tree(child)
 
@@ -70,8 +72,8 @@ class PageTreeDiff(object):
 			print "Difference exists between two trees"
 			#print self.diff_hash_list
 			#print self.diff_id_list
-			ref_file = codecs.open("../files/ref_tree.html", "w+", "UTF-8")
-			comp_file = codecs.open("../files/comp_tree.html", "w+", "UTF-8")
+			ref_file = codecs.open("../files/"+self.folder+"ref_tree.html", "w+", "UTF-8")
+			comp_file = codecs.open("../files/"+self.folder+"comp_tree.html", "w+", "UTF-8")
 			ref_file.write(self.ref_tree.prettify())
 			comp_file.write(self.comp_tree.prettify())
 			ref_file.close()

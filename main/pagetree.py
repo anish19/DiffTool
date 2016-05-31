@@ -19,7 +19,7 @@ class PageTree(object):
 			if (not isinstance(child, NavigableString)):
 				child['match'] = 0
 				child['level'] = level + 1;
-				child['id'] = self.id_ctr
+				child['id_diff_z1z'] = self.id_ctr
 				self.id_ctr += 1
 				self.__add_levels(child, level + 1)
 
@@ -29,7 +29,7 @@ class PageTree(object):
 	def build_tree(self):
 		self.soup.html['level'] = 0
 		self.soup.html['match'] = 0
-		self.soup.html['id'] = 0
+		self.soup.html['id_diff_z1z'] = 0
 		self.__add_levels(self.soup.html, 0)
 		for tag in self.soup.find_all(True):
 			if (tag.has_attr('level')):
