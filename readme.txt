@@ -72,12 +72,24 @@ Requires
 
 	base_diff.txt
 	-------------
-		0
-		2
+		id:0
+		element:<html level='0' id='0' hash='111'>
+			<head level='1' id='1' hash='456'>
+				Hi
+			</head>
+			<body level='1' id='2' hash='777'>
+				234
+			</body>
+		</html>
+		id:2
+		element:<body level='1' id='2' hash='777'>
+				234
+			</body>
 
 	
 	Explaination-
 	In base_diff.txt, 0 refers to the html element and 2 refers to the body element. So base_diff.txt has a \n seperated list of identifers that lead us to the different elements.
+	The modified/new elements are also added to the diff
 
 
 
