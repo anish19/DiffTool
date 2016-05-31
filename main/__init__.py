@@ -26,10 +26,13 @@ def main():
     #DIFF between two direct visits
     base_diff = diff.PageTreeDiff(page1_tree.soup, page1_tree.max_level, page2_tree.soup, page2_tree.max_level)
     diff_id_list = base_diff.find_diff()
-    base_diff_file = codecs.open("../files/base_diff.txt", "w+", "utf-8")
+    base_diff_file = codecs.open("../files/base_diff.txt", "w+")#, "utf-8")
     if diff_id_list is not None:
         for diff_item in diff_id_list:
-            base_diff_file.write(str(diff_item))
+            base_diff_file.write('id:')
+            base_diff_file.write(str(diff_item[0]))
+            base_diff_file.write('\nelement:')
+            base_diff_file.write(diff_item[1].encode("UTF-8"))
             base_diff_file.write('\n')
     base_diff_file.close()
 

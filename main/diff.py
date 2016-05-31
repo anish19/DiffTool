@@ -10,6 +10,8 @@ class PageTreeDiff(object):
 	comp_count = 0
 	ref_map = {}    #dict of all element hash of ref tree
 	comp_map = {}   #dict of all element hash of comp tree
+	ref_id_ele_map = {}
+	comp_id_ele_map = {}
 	comp_max_level = 0
 	ref_max_level = 0
 	diff_hash_list = [] #list of diff hashes between ref_map and comp_map
@@ -30,6 +32,7 @@ class PageTreeDiff(object):
 					# print "----"
 					if not isinstance(child, NavigableString):
 						self.ref_map[child['id']] = child['hash']
+						self.ref_id_ele_map[child['id']] = child
 						self.ref_count += 1
 					# print child
 					# print "====="
@@ -47,6 +50,7 @@ class PageTreeDiff(object):
 				if len(child) > 0:
 					if not isinstance(child, NavigableString):
 						self.comp_map[child['id']] = child['hash']
+						self.comp_id_ele_map[child['id']] = child
 						self.comp_count += 1
 					self.__build_comp_tree(child)
 
@@ -73,7 +77,11 @@ class PageTreeDiff(object):
 			ref_file.close()
 			comp_file.close()
 
-			return self.diff_id_list
+			diff_id_ele_list = []
+			for id in self.diff_id_list:
+				id_ele = id, self.comp_id_ele_map[id]
+				diff_id_ele_list.append(id_ele)
+			return diff_id_ele_list
 			#self.__find_tag(self.ref_tree, self.comp_tree)
 
 	def __find_tag(self, ref_tree, comp_tree):
