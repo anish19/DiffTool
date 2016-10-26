@@ -20,6 +20,10 @@ def main():
     print curr_time
     os.makedirs("../files/"+curr_time)
 
+
+    '''
+    CHANGE ENTRY FOR URL 1 on line 28
+    '''
     print "First visit to page..."
     page1 = grab.grab(url6)
     page1_content = page1.get_dynamic_content(curr_time + "visit1.html")
@@ -31,26 +35,15 @@ def main():
     print "Sleep for 5 secs"
     time.sleep(5)
 
+    '''
+    CHANGE ENTRY FOR URL 1 on line 42
+    '''
     print "Second visit to page..."
     page2 = grab.grab(url6)
     page2_content = page2.get_dynamic_content(curr_time + "visit2.html")
     #create page tree from above too
     page2_tree = pagetree2.PageTree2(page2_content)
     page2_tree.build_tree()
-
-    # page1_content=page1_content.encode('utf8')
-    # page2_content=page2_content.encode('utf8')
-
-    # fromlines = page1_content
-    # tolines = page2_content
-    #
-    # diff = difflib.HtmlDiff().make_file(fromlines,tolines)
-    #
-    # print diff
-    # base_diff_file = codecs.open("../files/"+curr_time+"python_diff.html", "w+")
-    # base_diff_file.write(diff)
-
-    # sys.stdout.writelines(diff)
 
     #DIFF between two direct visits
     print "Diff Stage - "
@@ -60,19 +53,8 @@ def main():
     if diff_id_list is not None:
         for diff_item in diff_id_list:
             if diff_item[0] == '*':
-                # with open("../files/"+curr_time+"/ref_tree.html","r") as refFile:
-                #     for num1, line in enumerate(refFile, 1):
-                #         if str(diff_item[1]) in line:
-                #             break
-                #
-                # with open("../files/"+curr_time+"/comp_tree.html","r") as compFile:
-                #     for num2, line in enumerate(compFile, 1):
-                #         if str(diff_item[2]) in line:
-                #             break
                 item1 = '*'
                 diff_str = item1 + str(diff_item[1])+','+ str(diff_item[2])
-                # diff_str = item1 + str(diff_item[1])+'\n' +'**********' +'\n' + str(diff_item[2])+'\n'
-                # diff_str = item1 + diff_item[1].encode("UTF-8")+'\n' +'**********' +'\n' + diff_item[2].encode("UTF-8")+'\n'
                 base_diff_file.write(diff_str)
                 base_diff_file.write(';\n')
                 continue
@@ -95,10 +77,6 @@ def main():
                 # diff_str = item1 + diff_item[1].encode("UTF-8")+'\n'
                 base_diff_file.write(diff_str)
                 base_diff_file.write(';\n')
-            # base_diff_file.write('id:')
-            # base_diff_file.write(str(diff_item[0]))
-            # base_diff_file.write('\nelement:')
-            # base_diff_file.write(diff_item[1].encode("UTF-8"))
     base_diff_file.close()
 
     #for each proxy
