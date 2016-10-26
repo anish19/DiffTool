@@ -11,7 +11,6 @@ Requires
 1. __init__.py starts the program.
 
 2. files/ folder has one sample output set.
-	- The sample output is for webpage http://www.timeanddate.com/
 	- visit1.html stores the exact html rendered after 5 secs the page is rendered by firefox.
 	- sleep for 5 secs
 	- visit2.html stores the exact html rendered after 2nd visit of page.
