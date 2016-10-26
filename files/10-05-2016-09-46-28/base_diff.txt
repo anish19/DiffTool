@@ -1,0 +1,46 @@
+*****************************************************************************
+32
+**********
+49
+*****************************************************************************
+
+et=1475846990;
+function f0(d){return ld[d.getUTCDay()]+', '+lm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear()+' at '+((d.getUTCHours()+11)%12+1)+':'+p2(d.getUTCMinutes())+':'+p2(d.getUTCSeconds())+' '+_ap(d);}
+function f1(d){return ld[d.getUTCDay()]+', '+lm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear()+' at '+p2(d.getUTCHours())+':'+p2(d.getUTCMinutes())+':'+p2(d.getUTCSeconds());}
+function f2(d){return ((d.getUTCHours()+11)%12+1)+':'+p2(d.getUTCMinutes());}
+function f3(d){return ''+p2(d.getUTCSeconds());}
+function f4(d){return ''+_ap(d);}
+function f5(d){return ld[d.getUTCDay()];}
+function f6(d){return sm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear();}
+function f7(d){return ''+sm[d.getUTCMonth()];}
+function f8(d){return ''+d.getUTCFullYear();}
+function f9(d){return ''+d.getUTCDate();}
+function f10(d){return sd1[d.getUTCDay()];}
+cks={clk_hm:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f2},ij0:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f3},clk_am:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f4},ij1:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f5},ij2:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f6},cal_m:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f7},cal_y:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f8},cal_d:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f9},cal_w:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f10}};
+lm=[];lm[9]='October';sm=[];sm[9]='Oct';ld=[];ld[3]='Wednesday';ld[4]='Thursday';ld[5]='Friday';ld[6]='Saturday';sd1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function _ap(d){var t=Math.floor(d.getTime()/1E3+8640000000)%86400;if(t===0){return 'Midnight';}if(t==43200){return 'Noon';}if(t&lt;43200){return 'AM';}return 'PM';}
+ 
+
+
+
+**********
+
+et=1475847000;
+function f0(d){return ld[d.getUTCDay()]+', '+lm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear()+' at '+((d.getUTCHours()+11)%12+1)+':'+p2(d.getUTCMinutes())+':'+p2(d.getUTCSeconds())+' '+_ap(d);}
+function f1(d){return ld[d.getUTCDay()]+', '+lm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear()+' at '+p2(d.getUTCHours())+':'+p2(d.getUTCMinutes())+':'+p2(d.getUTCSeconds());}
+function f2(d){return ((d.getUTCHours()+11)%12+1)+':'+p2(d.getUTCMinutes());}
+function f3(d){return ''+p2(d.getUTCSeconds());}
+function f4(d){return ''+_ap(d);}
+function f5(d){return ld[d.getUTCDay()];}
+function f6(d){return sm[d.getUTCMonth()]+' '+d.getUTCDate()+', '+d.getUTCFullYear();}
+function f7(d){return ''+sm[d.getUTCMonth()];}
+function f8(d){return ''+d.getUTCFullYear();}
+function f9(d){return ''+d.getUTCDate();}
+function f10(d){return sd1[d.getUTCDay()];}
+cks={clk_hm:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f2},ij0:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f3},clk_am:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f4},ij1:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f5},ij2:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f6},cal_m:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f7},cal_y:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f8},cal_d:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f9},cal_w:{t:[{o:-14400,a:"&lt;a href=\"/time/zones/edt\" title=\"Eastern Daylight Time\"&gt;EDT&lt;/a&gt;",d:1}],f:f10}};
+lm=[];lm[9]='October';sm=[];sm[9]='Oct';ld=[];ld[3]='Wednesday';ld[4]='Thursday';ld[5]='Friday';ld[6]='Saturday';sd1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+function _ap(d){var t=Math.floor(d.getTime()/1E3+8640000000)%86400;if(t===0){return 'Midnight';}if(t==43200){return 'Noon';}if(t&lt;43200){return 'AM';}return 'PM';}
+ 
+
+
+
