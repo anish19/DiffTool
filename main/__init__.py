@@ -25,7 +25,7 @@ def main():
     CHANGE ENTRY FOR URL 1 on line 28
     '''
     print "First visit to page..."
-    page1 = grab.grab(url6)
+    page1 = grab.grab(url5)
     page1_content = page1.get_dynamic_content(curr_time + "visit1.html")
     #create page tree from above
     page1_tree = pagetree2.PageTree2(page1_content)
@@ -39,7 +39,7 @@ def main():
     CHANGE ENTRY FOR URL 1 on line 42
     '''
     print "Second visit to page..."
-    page2 = grab.grab(url6)
+    page2 = grab.grab(url5)
     page2_content = page2.get_dynamic_content(curr_time + "visit2.html")
     #create page tree from above too
     page2_tree = pagetree2.PageTree2(page2_content)
@@ -54,7 +54,13 @@ def main():
         for diff_item in diff_id_list:
             if diff_item[0] == '*':
                 item1 = '*'
-                diff_str = item1 + str(diff_item[1])+','+ str(diff_item[2])
+                diff_str = item1 + str(diff_item[1])+','+ str(diff_item[2])#+'\n'+str(diff_item[3])
+                base_diff_file.write(diff_str)
+                base_diff_file.write(';\n')
+                continue
+            elif diff_item[0] == '#':
+                item1 = '#'
+                diff_str = item1 + str(diff_item[1])+',' + str(diff_item[2])
                 base_diff_file.write(diff_str)
                 base_diff_file.write(';\n')
                 continue

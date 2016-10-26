@@ -151,6 +151,9 @@ class PageTreeDiff(object):
             if node.parent['isDiff'] == -1:
                 if flag == 0:
                     comp_ele = self.matching_ele_map[node.parent['id_diff_z1z']]
+                    # diff = difflib.ndiff(str(node.parent.encode("UTF-8")),\
+                    #                     str(self.comp_id_ele_map[comp_ele].encode("UTF-8")))
+                    # diff = "".join(diff)
                     self.diff_id_ele_list.add(('*',node.parent['id_diff_z1z'], comp_ele))
                     self.diff_id_ele_list.add(('~',node['id_diff_z1z']))
                 # node['isDiff'] = 3
@@ -199,15 +202,15 @@ class PageTreeDiff(object):
         tag2 = tag2[:st] + tag2[st+le:]
 
 
-        print str(obj1['hash'])
-        print "??????1"
-        print obj1['id_diff_z1z']
-        print "??????2"
-        print obj2['id_diff_z1z']
-        print "??????3"
-        print tag1
-        print "??????4"
-        print tag2
+        # print str(obj1['hash'])
+        # print "??????1"
+        # print obj1['id_diff_z1z']
+        # print "??????2"
+        # print obj2['id_diff_z1z']
+        # print "??????3"
+        # print tag1
+        # print "??????4"
+        # print tag2
 
 
         if hash(tag1)!=hash(tag2):
