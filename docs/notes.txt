@@ -1,0 +1,5 @@
+if element has no child and it not matched then it is marked.
+if element has more than 1 child then the children are compared.
+if element has only one child then the element is marked and the children are compared.
+
+if all children are diff then parent are diff. Eg. google html are diff
