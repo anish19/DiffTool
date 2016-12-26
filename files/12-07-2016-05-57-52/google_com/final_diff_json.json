@@ -1,0 +1,36 @@
+{
+    "diff_attr": [
+        {
+            "comp": {
+                "1.2.2.1.8.5.2.2.2.2.3.1.1": "<a class=\"gb_Te gb_Ha gb_wb\" href=\"https://accounts.google.com/ServiceLogin..."
+            }, 
+            "ref": {
+                "1.2.2.1.8.5.2.2.2.2.3.1.1": "<a class=\"gb_Te gb_Ha gb_wb\" href=\"https://accounts.google.com/ServiceLogin..."
+            }
+        }
+    ], 
+    "diff_ele": {
+        "comp": [
+            {
+                "1.2.2.1.8.5.2.2.2.2.3": "<div class=\"gb_of gb_R\"><div class=\"gb_uc\"><a class=\"gb_Te gb_Ha gb_wb\" hre..."
+            }, 
+            {
+                "1.2.2.1.8.5.2.2.2.2.3.1.1": "<a class=\"gb_Te gb_Ha gb_wb\" href=\"https://accounts.google.com/ServiceLogin..."
+            }, 
+            {
+                "1.2.1.14": "<link href=\"/?ei=R-tHWPq7LOvS8AfHpIqIDQ\" rel=\"canonical\"/>"
+            }
+        ], 
+        "ref": [
+            {
+                "1.2.2.1.8.5.2.2.2.2.3": "<div class=\"gb_of gb_R\"><div class=\"gb_uc\"><a class=\"gb_Te gb_Ha gb_wb\" hre..."
+            }, 
+            {
+                "1.2.2.1.8.5.2.2.2.2.3.1.1": "<a class=\"gb_Te gb_Ha gb_wb\" href=\"https://accounts.google.com/ServiceLogin..."
+            }, 
+            {
+                "1.2.1.14": "<link href=\"/\" rel=\"canonical\"/>"
+            }
+        ]
+    }
+}

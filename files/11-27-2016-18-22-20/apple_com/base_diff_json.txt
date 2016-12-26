@@ -1,0 +1,7 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.3.21.2.2.4.2.2.1.1.1': '<span class="dashnav-progress" style="transform: scaleX(0.177429);"></span>'},
+                                {   '1.2.3.21.2.2.4.2.2.1': '<a aria-controls="homepage-gallery-gift-guide" aria-selected="true" class="...'},
+                                {   '1.2.3.21.2.2.4.2.2': '<li role="presentation"><a aria-controls="homepage-gallery-gift-guide" aria...'}],
+                    'ref': [   {   '1.2.3.21.2.2.4.2.2.1.1.1': '<span class="dashnav-progress" style="transform: scaleX(0.307429);"></span>'},
+                               {   '1.2.3.21.2.2.4.2.2.1': '<a aria-controls="homepage-gallery-gift-guide" aria-selected="true" class="...'},
+                               {   '1.2.3.21.2.2.4.2.2': '<li role="presentation"><a aria-controls="homepage-gallery-gift-guide" aria...'}]}}

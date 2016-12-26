@@ -1,0 +1,5 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.3.39': '<script>\n        var ariaProp = {"ariaToken":"ea6758984c4b43529f9929667d8d3...'},
+                                {   '1.2.3.39.1': 'var ariaProp = {"ariaToken":"ea6758984c4b43529f9929667d8d3198-c52d4a8b-47fe...'}],
+                    'ref': [   {   '1.2.3.39': '<script>\n        var ariaProp = {"ariaToken":"ea6758984c4b43529f9929667d8d3...'},
+                               {   '1.2.3.39.1': 'var ariaProp = {"ariaToken":"ea6758984c4b43529f9929667d8d3198-c52d4a8b-47fe...'}]}}

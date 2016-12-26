@@ -1,0 +1,9 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.2.3': '<img height="0" src="http://collect.tianya.cn/clickAnalyse.jsp?_version=p.0...'},
+                                {   '1.2.2.7.2.4.2.6.2.2': '<input id="user_action" name="action" type="hidden" value="f1.1480296411918...'},
+                                {   '1.2.2.1': '<img height="0" src="http://collect.tianya.cn/guid.jsp?_version=p.0.0.2&amp...'},
+                                {   '1.2.2.7.2.4.2.4': '<input id="__sid" name="__sid" type="hidden" value="1#4#1.0#f218ac3e-9fe5-4...'}],
+                    'ref': [   {   '1.2.2.3': '<img height="0" src="http://collect.tianya.cn/clickAnalyse.jsp?_version=p.0...'},
+                               {   '1.2.2.7.2.4.2.6.2.2': '<input id="user_action" name="action" type="hidden" value="f1.1480296401369...'},
+                               {   '1.2.2.1': '<img height="0" src="http://collect.tianya.cn/guid.jsp?_version=p.0.0.2&amp...'},
+                               {   '1.2.2.7.2.4.2.4': '<input id="__sid" name="__sid" type="hidden" value="1#4#1.0#d03e38be-7176-4...'}]}}

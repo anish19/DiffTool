@@ -1,0 +1,10 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.3.2': '<script>\nwith(document)with(body)with(insertBefore(createElement("script"),...'},
+                                {   '1.2.3.10': '<input id="bucketTestVersion" type="hidden" value="1"/>'},
+                                {   '1.2.3.2.1': 'with(document)with(body)with(insertBefore(createElement("script"),firstChil...'},
+                                {   '1.2.3.1': '<script exparams="userid=&amp;aplus&amp;ali_beacon_id=&amp;ali_apache_id=&a...'},
+                                {   '1.2.3.29.2': '<iframe height="0" src="//dis.us.criteo.com/dis/dis.aspx?p=23735&amp;cb=177...'}],
+                    'ref': [   {   '1.2.3.2': '<script>\nwith(document)with(body)with(insertBefore(createElement("script"),...'},
+                               {   '1.2.3.2.1': 'with(document)with(body)with(insertBefore(createElement("script"),firstChil...'},
+                               {   '1.2.3.1': '<script exparams="userid=&amp;aplus&amp;ali_beacon_id=&amp;ali_apache_id=&a...'},
+                               {   '1.2.3.27.2': '<iframe height="0" src="//dis.us.criteo.com/dis/dis.aspx?p=23735&amp;cb=439...'}]}}

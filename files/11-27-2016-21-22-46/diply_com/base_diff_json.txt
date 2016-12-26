@@ -1,0 +1,5 @@
+{   'diff_attr': [   {   'comp': {   '1.2.3.8.6.2.4.3': '<div class="dad-spot" data-google-query-id="CNiijI62ytACFc64swodNKIGVQ" id=...'},
+                         'ref': {   '1.2.3.8.6.2.4.3': '<div class="dad-spot" data-google-query-id="CLSvwIm2ytACFcsGDAod4jUOXg" id=...'}}],
+    'diff_ele': {   'comp': [   {   '1.2.1.101': '<script id="gpt-impl-0.5499902464987291" src="http://partner.googleadservic...'},
+                                {   '1.2.3.14': '<iframe id="google_osd_static_frame_5964795759397" name="google_osd_static_...'}],
+                    'ref': [   {   '1.2.1.101': '<script id="gpt-impl-0.23605698647799644" src="http://partner.googleadservi...'}]}}

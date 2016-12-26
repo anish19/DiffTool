@@ -1,0 +1,10 @@
+{   'diff_attr': [   {   'comp': {   '1.2.3.44': '<div class="advshow_float" style="left: 0px; position: absolute; top: 69px;...'},
+                         'ref': {   '1.2.3.44': '<div class="advshow_float" style="left: 0px; position: absolute; top: 69px;...'}},
+                     {   'comp': {   '1.2.3.134.2.4.4.2.2': '<ul style="margin-top: -0.0483299px;">\n<li>\n<a href="http://pj.91.com/" tar...'},
+                         'ref': {   '1.2.3.134.2.4.4.2.2': '<ul style="margin-top: 0px;">\n<li>\n<a href="http://pj.91.com/" target="_bla...'}},
+                     {   'comp': {   '1.2.3.57.2.2.2.3.2': '<ul class="slideContainer" id="slideContainer" style="margin-left: -110px; ...'},
+                         'ref': {   '1.2.3.57.2.2.2.3.2': '<ul class="slideContainer" id="slideContainer" style="margin-left: -110px; ...'}},
+                     {   'comp': {   '1.2.3.46': '<div class="advshow_float" style="right: 0px; position: absolute; top: 69px...'},
+                         'ref': {   '1.2.3.46': '<div class="advshow_float" style="right: 0px; position: absolute; top: 69px...'}}],
+    'diff_ele': {   'comp': [   {   '1.2.3.64.2.14.10': '<p class="time"><s class="remain"></s> <span class="time-remain"> <span id=...'}],
+                    'ref': [   {   '1.2.3.64.2.14.10': '<p class="time"><s class="remain"></s> <span class="time-remain"> <span id=...'}]}}

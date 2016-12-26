@@ -1,0 +1,7 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.3.7.4.2.2.2.4.2.4.2.2.24': '<div style="display:none;"><input id="TokenFields1586783561" name="data[_To...'},
+                                {   '1.2.3.7.4.2.2.2.4.2.4.2.2.24.1': '<input id="TokenFields1586783561" name="data[_Token][fields]" type="hidden"...'},
+                                {   '1.2.3.7.4.2.2.2.4.2.4.2.2.1.2': '<input id="Token2055164175" name="data[_Token][key]" type="hidden" value="d...'}],
+                    'ref': [   {   '1.2.3.7.4.2.2.2.4.2.4.2.2.24': '<div style="display:none;"><input id="TokenFields895971481" name="data[_Tok...'},
+                               {   '1.2.3.7.4.2.2.2.4.2.4.2.2.24.1': '<input id="TokenFields895971481" name="data[_Token][fields]" type="hidden" ...'},
+                               {   '1.2.3.7.4.2.2.2.4.2.4.2.2.1.2': '<input id="Token1191753215" name="data[_Token][key]" type="hidden" value="a...'}]}}

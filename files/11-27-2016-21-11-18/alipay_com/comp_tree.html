@@ -1,0 +1,761 @@
+<!-- FD:83:homeproxy/home/startup.vm:START -->
+<!-- FD:83:homeproxy/home/startup.vm:634:startup.schema:startup-头部页面描述:START -->
+<!DOCTYPE html>
+<html id_z1z0="1.4" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head id_z1z0="1.4.1">
+  <meta charset="utf-8" id_z1z0="1.4.1.2"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" id_z1z0="1.4.1.4"/>
+  <meta content="OyUb4RVdSe" id_z1z0="1.4.1.6" name="baidu-site-verification"/>
+  <meta content="webkit" id_z1z0="1.4.1.8" name="renderer"/>
+  <title id_z1z0="1.4.1.10">
+   支付宝 知托付！
+  </title>
+  <meta content="支付宝,电子支付/网上支付/安全支付/手机支付,安全购物/网络购物付款/付款/收款,水电煤缴费/信用卡还款/AA收款,支付宝网站" id_z1z0="1.4.1.12" name="keywords"/>
+  <meta content="支付宝，全球领先的独立第三方支付平台，致力于为广大用户提供安全快速的电子支付/网上支付/安全支付/手机支付体验，及转账收款/水电煤缴费/信用卡还款/AA收款等生活服务应用。" id_z1z0="1.4.1.14" name="description"/>
+  <link href="https://i.alipayobjects.com/common/favicon/favicon.ico" id_z1z0="1.4.1.16" rel="icon" type="image/x-icon"/>
+  <link href="https://ds.alipay.com/" id_z1z0="1.4.1.18" media="only screen and(max-width: 640px)" rel="alternate"/>
+  <!--[if lte IE 7]>
+    <script type="text/javascript">
+        window.location.href = 'https://www.alipay.com/x/kill-ie.htm';
+    </script>
+    <![endif]-->
+  <style id_z1z0="1.4.1.22">
+   * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+        }
+
+        ul, ol, li {
+            list-style: none;
+        }
+
+        em, i {
+            font-style: normal;
+        }
+
+        img {
+            border: none;
+        }
+
+        input, img {
+            vertical-align: middle;
+        }
+
+        body {
+            background: #fff;
+            color: #666;
+            font-size: 14px;
+            font-family: arial;
+        }
+
+        a {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        html, body {
+            background: #f9f9f9;
+            width: 100%;
+            height: 100%;
+            font-family: Helvetica, sans-serif;
+            -webkit-text-size-adjust: none;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        textarea.fixAndroidKeyboard:focus, input.fixAKeyboard:focus {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            -webkit-user-modify: read-write-plaintext-only;
+        }
+
+        .noscroll {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .app-dom {
+            width: 100%;
+        }
+
+        .clearfix:after {
+            display: block;
+            content: '';
+            clear: both;
+            visibility: hidden;
+        }
+  </style>
+  <style id_z1z0="1.4.1.24">
+   /*@font-face {*/
+        /*font-family: 'iconfont';*/
+        /*src: url('//at.alicdn.com/t/font_1436009778_9049127.eot'); /!* IE9*!/*/
+        /*src: url('//at.alicdn.com/t/font_1436009778_9049127.eot?#iefix') format('embedded-opentype'), /!* IE6-IE8 *!/ url('//at.alicdn.com/t/font_1436009778_9049127.woff') format('woff'), /!* chrome、firefox *!/ url('//at.alicdn.com/t/font_1436009778_9049127.ttf') format('truetype'), /!* chrome、firefox、opera、Safari, Android, iOS 4.2+*!/ url('//at.alicdn.com/t/font_1436009778_9049127.svg#iconfont') format('svg'); /!* iOS 4.1- *!/*/
+        /*}*/
+
+        /*.iconfont {*/
+        /*font-family: "iconfont" !important;*/
+        /*font-size: 32px;*/
+        /*font-style: normal;*/
+        /*-webkit-font-smoothing: antialiased;*/
+        /*-webkit-text-stroke-width: 0.2px;*/
+        /*-moz-osx-font-smoothing: grayscale;*/
+        /*}*/
+
+        body {
+            font: 12px/1.5 "Microsoft YaHei", tahoma, arial, Hiragino Sans GB, \5b8b\4f53;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 20px;
+            left: 0px;
+            z-index: 999;
+        }
+
+        .nav {
+            width: 80%;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+
+
+        .logo {
+            float: left;
+            background-image: url(https://img.alicdn.com/tps/TB17ghmIFXXXXXAXFXXXXXXXXXX.png);
+            display: block;
+            width: 70px;
+            height: 25px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 70px;
+        }
+
+        .entry {
+            float: right;
+            color: #fff;
+        }
+
+        .entry .state {
+            color: #bfbfbf;
+        }
+
+        .entry a {
+            font-size: 12px;
+            color: #fff;
+            margin: 0 5px;
+        }
+
+        .entry a:hover {
+            color: #00bbee;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .content {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;;
+        }
+
+        .wrap {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .slogan {
+            width: 600px;
+            height: 200px;
+            background: url(https://img.alicdn.com/tps/TB1POhqIFXXXXXbXFXXXXXXXXXX.png) no-repeat 0 0;
+            display: inline-block;
+            background-size: 600px;
+        }
+
+        .mid {
+            width: 100%;
+        }
+
+        .main-entry {
+            width: 550px;
+            height: 50px;
+            margin: 15px auto 0;
+        }
+
+        .main-entry a {
+            display: block;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            height: 50px;
+            width: 170px;
+            color: #ffffff;
+            line-height: 50px;
+            position: relative;
+        }
+
+        .main-entry a .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            padding-left: 18px;
+        }
+
+        .main-entry a .title i {
+            position: absolute;
+            left: 20px;
+            top: 14px;
+            background: url(https://img.alicdn.com/tps/TB1uh30IpXXXXXKXVXXXXXXXXXX.png) no-repeat 0 0;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+        }
+
+        .main-entry a .title .seller {
+            background-image: url(https://img.alicdn.com/tps/TB12JNkIFXXXXXBXXXXXXXXXXXX.png);
+        }
+        .main-entry a .title .developer {
+            background-image: url(https://zos.alipayobjects.com/rmsportal/neqhNGwxBXBmhVY.png);
+        }
+
+        .main-entry s {
+            background-color: #00a3ee;
+            opacity: .9;
+            display: block;
+            border-radius: 8px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .main-entry a:hover s {
+            background-color: #00aaee;
+            opacity: 1;
+        }
+
+        a.personal-login,
+        a.seller-login
+        {
+            margin-left: 20px;
+        }
+        .alipay-app {
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+        }
+
+        .alipay-app .ma {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .alipay-app img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .alipay-app p {
+            line-height: 30px;
+            height: 30px;
+            color: #ffffff;
+            margin: 5px 0 10px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            z-index: 99;
+        }
+
+        .nav-links {
+            width: 99%;
+            height: 20px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .footer ul {
+            padding-left: 5px;
+        }
+
+        .footer li {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .footer li a {
+            color: #666;
+        }
+
+        span.ownership {
+            /*color: #000000;*/
+        }
+
+        .nav-icons {
+            width: 250px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .nav-icons a {
+            width: 20px;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            height: 28px;
+            background: url(https://img.alicdn.com/tps/TB1.cMTIpXXXXbLXVXXXXXXXXXX.png) no-repeat 0 0;
+        }
+
+        a.pic1 {
+            background-position: 0px -5px;
+            width: 18px;
+        }
+
+        a.pic1:hover {
+            background-position: 1px -28px;
+            width: 18px;
+        }
+
+        a.pic2 {
+            background-position: -33px -5px;
+            width: 40px;
+        }
+
+        a.pic2:hover {
+            background-position: -32px -28px;
+            width: 40px;
+        }
+
+        a.pic3 {
+            background-position: -74px -5px;
+            width: 33px;
+        }
+
+        a.pic3:hover {
+            background-position: -73px -28px;
+            width: 33px;
+        }
+
+        a.pic4 {
+            background-position: -115px -5px;
+            width: 18px;
+        }
+
+        a.pic4:hover {
+            background-position: -114px -28px;
+            width: 18px;
+        }
+
+        a.pic5 {
+            background-position: -135px -5px;
+            width: 31px;
+        }
+
+        a.pic5:hover {
+            background-position: -134px -28px;
+            width: 31px;
+        }
+
+
+        a.pic7 {
+            background-position: -200px -5px;
+            width: 20px;
+        }
+
+        a.pic7:hover {
+            background-position: -200px -26px;
+            width: 20px;
+        }
+
+
+      	#ServerNum,#ServerNum p {
+			line-height: 10px;
+			text-align: center;
+			color: white;
+			height: 10px;
+		}
+
+
+        /*slide*/
+        .front, .items, .item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .back {
+            bottom: 70px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .items {
+            overflow: visible;
+        }
+
+        .item {
+            background: #fff none no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: none;
+        }
+  </style>
+  <!--[if lte IE 8]>
+    <style>
+        .slogan, .main-entry a .title i, .logo {
+            background-image: none !important;
+        }
+        .slogan {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1POhqIFXXXXXbXFXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .main-entry a .title i {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1uh30IpXXXXXKXVXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .main-entry a .title .seller {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB12JNkIFXXXXXBXXXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .logo {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB17ghmIFXXXXXAXFXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .item1 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+
+        .item2 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+
+        .item3 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+    </style>
+    <![endif]-->
+ </head>
+ <body id_z1z0="1.4.3">
+  <div class="main" id_z1z0="1.4.3.2">
+   <div class="header" id_z1z0="1.4.3.2.2">
+    <div class="nav" id_z1z0="1.4.3.2.2.2">
+     <div class="logo" id_z1z0="1.4.3.2.2.2.2">
+     </div>
+     <div class="entry" id_z1z0="1.4.3.2.2.2.4">
+      <span class="state" id_z1z0="1.4.3.2.2.2.4.2">
+       我已有支付宝账户
+      </span>
+      <a href="https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fwww.alipay.com%2F" id_z1z0="1.4.3.2.2.2.4.4" seed="" target="_self">
+       快速登录
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="container" id_z1z0="1.4.3.2.4">
+    <div class="content" id_z1z0="1.4.3.2.4.2">
+     <div class="wrap" id_z1z0="1.4.3.2.4.2.2">
+      <div class="slogan" id_z1z0="1.4.3.2.4.2.2.2">
+      </div>
+      <div class="mid" id_z1z0="1.4.3.2.4.2.2.4">
+       <div class="main-entry" id_z1z0="1.4.3.2.4.2.2.4.2">
+        <a class="developer-login" href="javascript:;" id_z1z0="1.4.3.2.4.2.2.4.2.2">
+         <span class="title" id_z1z0="1.4.3.2.4.2.2.4.2.2.1">
+          <i class="developer" id_z1z0="1.4.3.2.4.2.2.4.2.2.1.1">
+          </i>
+          我是开发者
+         </span>
+         <s id_z1z0="1.4.3.2.4.2.2.4.2.6.2">
+         </s>
+        </a>
+        <a class="seller-login" href="javascript:;" id_z1z0="1.4.3.2.4.2.2.4.2.4">
+         <span class="title" id_z1z0="1.4.3.2.4.2.2.4.2.4.1">
+          <i class="seller" id_z1z0="1.4.3.2.4.2.2.4.2.4.1.1">
+          </i>
+          我是商家用户
+         </span>
+         <s id_z1z0="1.4.3.2.4.2.2.4.2.6.2">
+         </s>
+        </a>
+        <a class="personal-login" href="javascript:;" id_z1z0="1.4.3.2.4.2.2.4.2.6">
+         <span class="title" id_z1z0="1.4.3.2.4.2.2.4.2.6.1">
+          <i class="personal" id_z1z0="1.4.3.2.4.2.2.4.2.6.1.1">
+          </i>
+          我是个人用户
+         </span>
+         <s id_z1z0="1.4.3.2.4.2.2.4.2.6.2">
+         </s>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="back" id_z1z0="1.4.3.2.4.4">
+     <div class="items" id_z1z0="1.4.3.2.4.4.2">
+      <div class="item item1" id_z1z0="1.4.3.2.4.4.2.2" style='background-image: url("https://img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg"); display: block;'>
+      </div>
+      <div class="item item2" id_z1z0="1.4.3.2.4.4.2.4" style='background-image: url("https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg");'>
+      </div>
+      <div class="item item3" id_z1z0="1.4.3.2.4.4.2.6" style='background-image: url("https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg");'>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer" id_z1z0="1.4.3.2.6">
+    <div class="nav-links" id_z1z0="1.4.3.2.6.2">
+     <ul id_z1z0="1.4.3.2.6.2.2">
+      <li id_z1z0="1.4.3.2.6.2.2.2">
+       <a href="http://www.antgroup.com" id_z1z0="1.4.3.2.6.2.2.2.1" seed="" target="_blank">
+        蚂蚁金服集团
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.6">
+       <a href="https://www.alipay.com" id_z1z0="1.4.3.2.6.2.2.6.1" seed="" target="_blank">
+        支付宝
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.10">
+       <a href="https://yebprod.alipay.com/yeb/index.htm" id_z1z0="1.4.3.2.6.2.2.10.1" seed="" target="_blank">
+        余额宝
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.14">
+       <a href="https://zhaocaibao.alipay.com/" id_z1z0="1.4.3.2.6.2.2.14.1" seed="" target="_blank">
+        招财宝
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.18">
+       <a href="https://b.zmxy.com.cn/index.htm?scene=alipay" id_z1z0="1.4.3.2.6.2.2.18.1" seed="" target="_blank">
+        芝麻信用
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.22">
+       <a href="https://www.aliloan.com/" id_z1z0="1.4.3.2.6.2.2.22.1" seed="" target="_blank">
+        蚂蚁微贷
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.26">
+       <a href="https://www.mybank.cn/index.htm" id_z1z0="1.4.3.2.6.2.2.26.1" seed="" target="_blank">
+        网商银行
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.30">
+       <a href="https://open.alipay.com/platform/home.htm?from=zhuzhanfooter20160818%20" id_z1z0="1.4.3.2.6.2.2.30.1" seed="" target="_blank">
+        开放平台
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.34">
+       <a href="https://job.alibaba.com/index.php" id_z1z0="1.4.3.2.6.2.2.34.1" seed="" target="_blank">
+        诚征英才
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.38">
+       <a href="https://ab.alipay.com/i/lianxi.htm" id_z1z0="1.4.3.2.6.2.2.38.1" seed="" target="_blank">
+        联系我们
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.40">
+       |
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.42">
+       <a href="https://global.alipay.com/ospay/home.htm" id_z1z0="1.4.3.2.6.2.2.42.1" seed="" target="_blank">
+        International Business
+       </a>
+      </li>
+      <li id_z1z0="1.4.3.2.6.2.2.44">
+       <span class="ownership" id_z1z0="1.4.3.2.6.2.2.44.1">
+        支付宝版权所有 2004-2016 ICP证：沪B2-20150087
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div class="nav-icons" id_z1z0="1.4.3.2.6.4">
+     <a class="pic1" href="https://fun.alipay.com/certificate/zfxkz.htm" id_z1z0="1.4.3.2.6.4.2" target="_blank">
+     </a>
+     <a class="pic2" href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=WWW.ALIPAY.COM&amp;zh_cn" id_z1z0="1.4.3.2.6.4.4" target="_blank">
+     </a>
+     <a class="pic3" href="javascript:;" id_z1z0="1.4.3.2.6.4.6" target="_blank">
+     </a>
+     <a class="pic4" href="http://zjnet.zjaic.gov.cn/sign/addSignOnline.action" id_z1z0="1.4.3.2.6.4.8" target="_blank">
+     </a>
+     <a class="pic7" href="https://fun.alipay.com/certificate/index.htm" id_z1z0="1.4.3.2.6.4.10" target="_blank">
+     </a>
+    </div>
+    <div id="ServerNum" id_z1z0="1.4.3.2.6.6">
+     <p id_z1z0="1.4.3.2.6.6.1">
+      homeproxy-80-6
+     </p>
+    </div>
+   </div>
+  </div>
+  <script id_z1z0="1.4.3.4" src="https://t.alipayobjects.com/images/rmsweb/T19ctgXcRlXXXXXXXX.js">
+  </script>
+  <script id_z1z0="1.4.3.6">
+   var slideEle = slider($('.items'));
+
+    function slider(elem) {
+        var items = elem.children(),
+                max = items.length - 1,
+                animating = false,
+                currentElem,
+                nextElem,
+                pos = 0;
+
+        sync();
+
+        return {
+            next: function () {
+                move(1);
+            },
+            prev: function () {
+                move(-1);
+            },
+            itemsNum: items &amp;&amp; items.length
+        };
+
+        function move(dir) {
+            if (animating) {
+                return;
+            }
+            if (dir &gt; 0 &amp;&amp; pos == max || dir &lt; 0 &amp;&amp; pos == 0) {
+                if (dir &gt; 0) {
+                    nextElem = elem.children('div').first().remove();
+                    nextElem.hide();
+                    elem.append(nextElem);
+                } else {
+                    nextElem = elem.children('div').last().remove();
+                    nextElem.hide();
+                    elem.prepend(nextElem);
+                }
+                pos -= dir;
+                sync();
+            }
+            animating = true;
+            items = elem.children();
+            currentElem = items[pos + dir];
+            $(currentElem).fadeIn(400, function () {
+                pos += dir;
+                animating = false;
+            });
+        }
+
+        function sync() {
+            items = elem.children();
+            for (var i = 0; i &lt; items.length; ++i) {
+                items[i].style.display = i == pos ? 'block' : '';
+            }
+        }
+
+    }
+
+    if (slideEle.itemsNum &amp;&amp; slideEle.itemsNum &gt; 1) {
+        setInterval(function () {
+            slideEle.next();
+        }, 4000)
+    }
+  </script>
+  <script id_z1z0="1.4.3.8">
+   function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+	
+    //cookie记录个人登录标记为1,商家登录标记为2
+    $(".personal-login").click(function () {
+        setCookie("_n_h_n_option", "1", 365);
+        location.href = "https://www.alipay.com";
+    });
+
+    $(".seller-login").click(function () {
+        location.href = "https://e.alipay.com/index.htm?from=zhuzhan20160927";
+    });
+    $(".developer-login").click(function () {
+        location.href = "https://open.alipay.com/platform/home.htm?from=zhuzhan20160818";
+    });
+  </script>
+ </body>
+</html>
+<!-- FD:83:homeproxy/home/startup.vm:634:startup.schema:startup-头部页面描述:END -->

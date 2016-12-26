@@ -1,0 +1,1465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html id_z1z0="1.2" lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+ <head id_z1z0="1.2.1">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" id_z1z0="1.2.1.2"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" id_z1z0="1.2.1.4"/>
+  <meta content="text/javascript" http-equiv="Content-Script-Type" id_z1z0="1.2.1.6"/>
+  <meta content="text/css" http-equiv="Content-Style-Type" id_z1z0="1.2.1.8"/>
+  <title id_z1z0="1.2.1.10">
+   niconico
+  </title>
+  <meta content="© DWANGO Co., Ltd." id_z1z0="1.2.1.12" name="copyright"/>
+  <meta content="name=Niconico Video ; action-uri=http://www.nicovideo.jp/; icon-uri=http://uni.res.nimg.jp/img/favicon.ico" id_z1z0="1.2.1.14" name="msapplication-task"/>
+  <meta content="378853695459932" id_z1z0="1.2.1.16" property="fb:app_id"/>
+  <base href="http://www.nicovideo.jp/" id_z1z0="1.2.1.18"/>
+  <link href="http://nicomoba.jp/" id_z1z0="1.2.1.20" media="handheld" rel="alternate"/>
+  <link href="http://sp.nicovideo.jp/" id_z1z0="1.2.1.22" media="only screen and (max-width: 640px)" rel="alternate"/>
+  <link href="http://uni.res.nimg.jp/img/favicon.ico" id_z1z0="1.2.1.24" rel="shortcut icon"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/ini.css?121017" id_z1z0="1.2.1.26" media="all" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/zero_common.css?161124" id_z1z0="1.2.1.28" media="all" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/zero_index.css?161124" id_z1z0="1.2.1.30" media="all" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/timeshift.css?120401" id_z1z0="1.2.1.32" media="all" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/theme/zero_default.css?131206" id_z1z0="1.2.1.34" media="all" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/index_overseas.css?150226" id_z1z0="1.2.1.36" media="all" rel="stylesheet" type="text/css"/>
+  <!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="http://uni.res.nimg.jp/css/ie.css?110215">
+<![endif]-->
+  <!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="http://uni.res.nimg.jp/css/ie6.css?110215">
+<![endif]-->
+  <link href="http://uni.res.nimg.jp/css/setcountry.css?121017" id_z1z0="1.2.1.42" media="all" rel="stylesheet" type="text/css"/>
+  <script id="twitter-wjs" id_z1z0="1.2.1.44" src="//platform.twitter.com/widgets.js">
+  </script>
+  <script async="" id_z1z0="1.2.1.45" src="http://www.google-analytics.com/ga.js" type="text/javascript">
+  </script>
+  <script id_z1z0="1.2.1.46" type="text/javascript">
+   if (typeof Nico === 'undefined') Nico = {};
+if (typeof Nico.messages === 'undefined') Nico.messages = {};
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.47" src="http://uni.res.nimg.jp/js/lib/prototype.js?1.5.1.1_2" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.49" src="http://uni.res.nimg.jp/js/common.js?110215" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.51" src="http://uni.res.nimg.jp/js/swfobject.js?5" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.53" src="http://uni.res.nimg.jp/js/nicolib.js?150128" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.55" src="http://uni.res.nimg.jp/js/ads.js?110531" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.57" src="http://ads.nicovideo.jp/assets/js/ads-2.17.2.min.js" type="text/javascript">
+  </script>
+  <script id_z1z0="1.2.1.59" type="text/javascript">
+   var _gaq = _gaq || [];
+  _gaq.push(['__video._setAccount', 'UA-1089346-35']);
+  _gaq.push(['__video._setDomainName', 'nicovideo.jp']);
+  _gaq.push(['__video._trackPageview']);
+  _gaq.push(['__global._setAccount', 'UA-1089346-34']);
+  _gaq.push(['__global._setDomainName', 'nicovideo.jp']);
+  _gaq.push(['__global._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <script id_z1z0="1.2.1.61" src="http://uni.res.nimg.jp/js/__utm.js?110928" type="text/javascript">
+  </script>
+  <script id_z1z0="1.2.1.62" language="JavaScript1.5">
+   _ujv='1.5';
+  </script>
+  <script defer="defer" id_z1z0="1.2.1.64" src="//cdn.optimizely.com/js/1252970284.js">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.66" src="http://uni.res.nimg.jp/js/base.js?120501" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.68" src="http://uni.res.nimg.jp/js/lib/jquery/jquery-1.6.1.min.js?110705" type="text/javascript">
+  </script>
+  <script id_z1z0="1.2.1.70" type="text/javascript">
+   jQuery.noConflict();
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.72" src="http://uni.res.nimg.jp/js/daily_topics/contentslide.js?120822" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.74" src="http://uni.res.nimg.jp/js/index_overseas.js?121101" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.76" src="http://uni.res.nimg.jp/js/nicolib/SuggestSearch/nicolib-SuggestSearch.js?161031" type="text/javascript">
+  </script>
+  <script id_z1z0="1.2.1.78" type="text/javascript">
+   &lt;!--
+
+var User = { id: false, age: false, isPremium: false, isOver18: !!document.cookie.match(/nicoadult\s*=\s*1/), isMan: null };
+var q = "";
+var country = "";
+
+
+Nico.SuggestSearch.IS_ENABLED = false;
+
+Nico.SuggestSearch.IS_LOGIN = false;
+--&gt;
+  </script>
+  <script id_z1z0="1.2.1.80" type="text/javascript">
+   (function(we, ico) {
+	try {
+		we.msSiteModeCreateJumplist('niconico(Q)');
+		we.msSiteModeAddJumpListItem('Help',         'http://qa.nicovideo.jp/',              ico);
+		we.msSiteModeAddJumpListItem('Account Settings', 'https://account.nicovideo.jp/my/account', ico);
+		we.msSiteModeAddJumpListItem('Watch History',       'http://www.nicovideo.jp/my/history',                 ico);
+		we.msSiteModeAddJumpListItem('Upload Video',       'http://www.nicovideo.jp/my/video',                   ico);
+		we.msSiteModeAddJumpListItem('Follow',     'http://www.nicovideo.jp/my/watchlist',               ico);
+		we.msSiteModeAddJumpListItem('My List',     'http://www.nicovideo.jp/my/mylist',                  ico);
+		we.msSiteModeAddJumpListItem('Ranking', 'http://www.nicovideo.jp/uni_ranking',                ico);
+		we.msSiteModeAddJumpListItem('Upload',     'http://www.upload.nicovideo.jp/upload',        ico);
+		we.msSiteModeAddJumpListItem('My Page',     'http://www.nicovideo.jp/my/top',                     ico);
+		we.msSiteModeAddJumpListItem('Login',       'https://account.nicovideo.jp/login',      ico);
+	} catch(e) {}
+})(window.external, 'http://uni.res.nimg.jp/img/favicon.ico');
+  </script>
+  <script id_z1z0="1.2.1.82" src="http://uni.res.nimg.jp/js/setcountry.js?121121" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.1.84" type="text/javascript">
+   &lt;!--
+
+Ads.get_segment_object = function(){
+	var segment = {};
+
+	return segment;
+
+};
+
+// --&gt;
+  </script>
+ </head>
+ <body class="en-us" id_z1z0="1.2.3">
+  <link charset="utf-8" href="http://uni.res.nimg.jp/js/nicoheader/resources/siteHeader.css?150323" id_z1z0="1.2.3.2" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/css/base/site_header_extension.css" id_z1z0="1.2.3.4" rel="stylesheet" type="text/css"/>
+  <link charset="utf-8" href="http://uni.res.nimg.jp/js/nicoheader/resources/nicolib-CommonNotificationHeader.css?141023" id_z1z0="1.2.3.6" rel="stylesheet" type="text/css"/>
+  <script charset="utf-8" id_z1z0="1.2.3.8" src="http://uni.res.nimg.jp/js/nicoheader/siteHeader.js?150728" type="text/javascript">
+  </script>
+  <script charset="utf-8" id_z1z0="1.2.3.10" src="http://uni.res.nimg.jp/js/nicoheader/nicolib-CommonNotificationHeader.js?150618" type="text/javascript">
+  </script>
+  <div id="siteHeader" id_z1z0="1.2.3.12">
+   <div id="siteHeaderInner" id_z1z0="1.2.3.12.2">
+    <ul class="siteHeaderGlovalNavigation" id_z1z0="1.2.3.12.2.2">
+     <li id_z1z0="1.2.3.12.2.2.2">
+      <a href="http://www.nicovideo.jp/?header" id_z1z0="1.2.3.12.2.2.2.1">
+       <span id_z1z0="1.2.3.12.2.2.2.1.1">
+        Niconico
+       </span>
+      </a>
+     </li>
+     <li id_z1z0="1.2.3.12.2.2.4">
+      <a href="http://www.nicovideo.jp/video_top/?header" id_z1z0="1.2.3.12.2.2.4.1">
+       <span id_z1z0="1.2.3.12.2.2.4.1.1">
+        Videos
+       </span>
+      </a>
+     </li>
+     <li id_z1z0="1.2.3.12.2.2.6">
+      <a href="http://live.nicovideo.jp/?header" id_z1z0="1.2.3.12.2.2.6.1">
+       <span id_z1z0="1.2.3.12.2.2.6.1.1">
+        Live
+       </span>
+      </a>
+     </li>
+     <li id_z1z0="1.2.3.12.2.2.8">
+      <a href="http://com.nicovideo.jp/?header" id_z1z0="1.2.3.12.2.2.8.1">
+       <span id_z1z0="1.2.3.12.2.2.8.1.1">
+        Community
+       </span>
+      </a>
+     </li>
+     <li class="siteHeaderOther" id="siteHeaderLeftMenu" id_z1z0="1.2.3.12.2.2.10" style="display: none;">
+      <ul id="siteHeaderLeftMenuContainer" id_z1z0="1.2.3.12.2.2.10.2" style="display: none;">
+      </ul>
+     </li>
+    </ul>
+    <ul class="siteHeaderMenuList" id_z1z0="1.2.3.12.2.4">
+     <li class="siteHeaderLogin" id="siteHeaderNotification" id_z1z0="1.2.3.12.2.4.2">
+      <a href="http://www.nicovideo.jp/login" id_z1z0="1.2.3.12.2.4.2.2">
+       <span id_z1z0="1.2.3.12.2.4.2.2.1">
+        Login
+       </span>
+      </a>
+     </li>
+     <li class="siteHeaderHorizon" id_z1z0="1.2.3.12.2.4.4">
+      <a class="siteHeaderRegister" data-site="niconico" href="https://account.nicovideo.jp/register?sec=common_header&amp;mode=landing" id_z1z0="1.2.3.12.2.4.4.1" style="color:#F1B700;">
+       <span id_z1z0="1.2.3.12.2.4.4.1.1">
+        Sign Up
+       </span>
+      </a>
+     </li>
+     <!-- end notification header -->
+     <li class="siteHeaderHorizon" id_z1z0="1.2.3.12.2.4.8">
+      <a href="http://www.upload.nicovideo.jp/upload" id_z1z0="1.2.3.12.2.4.8.1">
+       <span id_z1z0="1.2.3.12.2.4.8.1.1">
+        Upload Video
+       </span>
+      </a>
+     </li>
+     <li id_z1z0="1.2.3.12.2.4.10">
+      <a href="local_ranking" id_z1z0="1.2.3.12.2.4.10.1">
+       <span id_z1z0="1.2.3.12.2.4.10.1.1">
+        Ranking
+       </span>
+      </a>
+     </li>
+     <li class="siteHeaderOther" id="siteHeaderRightMenu" id_z1z0="1.2.3.12.2.4.12">
+      <a href="javascript:void(0);" id_z1z0="1.2.3.12.2.4.12.2">
+       <span id_z1z0="1.2.3.12.2.4.12.2.1">
+        Menu▼
+       </span>
+      </a>
+      <ul id="siteHeaderRightMenuContainer" id_z1z0="1.2.3.12.2.4.12.4" style="display: none;">
+       <li id_z1z0="1.2.3.12.2.4.12.4.2">
+        <a href="/my/mylist" id_z1z0="1.2.3.12.2.4.12.4.2.1">
+         My List
+        </a>
+       </li>
+       <li id_z1z0="1.2.3.12.2.4.12.4.4">
+        <a href="/my/fav/user" id_z1z0="1.2.3.12.2.4.12.4.4.1">
+         Follow
+        </a>
+       </li>
+       <li id_z1z0="1.2.3.12.2.4.12.4.6">
+        <a href="/my/video" id_z1z0="1.2.3.12.2.4.12.4.6.1">
+         My Uploads
+        </a>
+       </li>
+       <li id_z1z0="1.2.3.12.2.4.12.4.8">
+        <a href="/my/history" id_z1z0="1.2.3.12.2.4.12.4.8.1">
+         Watch History
+        </a>
+       </li>
+       <li id_z1z0="1.2.3.12.2.4.12.4.10">
+        <a href="https://account.nicovideo.jp/my/account" id_z1z0="1.2.3.12.2.4.12.4.10.1">
+         Account Settings
+        </a>
+       </li>
+       <li id="siteHeaderRightMenuUnfix" id_z1z0="1.2.3.12.2.4.12.4.12" style="display: block;">
+        <a href="javascript:void(0);" id_z1z0="1.2.3.12.2.4.12.4.12.1">
+         Header
+         <span class="siteHeaderScroll" id_z1z0="1.2.3.12.2.4.12.4.12.1.2">
+          Pin
+         </span>
+        </a>
+       </li>
+       <li id="siteHeaderRightMenuFix" id_z1z0="1.2.3.12.2.4.12.4.14" style="display: none;">
+        <a href="javascript:void(0);" id_z1z0="1.2.3.12.2.4.12.4.14.1">
+         Header
+         <span class="siteHeaderFix" id_z1z0="1.2.3.12.2.4.12.4.14.1.2">
+          Unpin
+         </span>
+        </a>
+       </li>
+       <li id_z1z0="1.2.3.12.2.4.12.4.16">
+        <a href="http://ex.nicovideo.jp/help" id_z1z0="1.2.3.12.2.4.12.4.16.1">
+         Help
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div id="main_container" id_z1z0="1.2.3.14" style="margin: 0 auto;padding: 0 10px;position: relative;width: 976px;">
+   <div class="clearfix" id="header" id_z1z0="1.2.3.14.2">
+    <h1 id="logo_zero" id_z1z0="1.2.3.14.2.2">
+     <a href="http://www.nicovideo.jp/" id_z1z0="1.2.3.14.2.2.1">
+      niconico
+     </a>
+    </h1>
+   </div>
+   <!-- /#header -->
+   <div class="clarfix" id="searchFormWrap" id_z1z0="1.2.3.14.6">
+    <div id="searchFormInner" id_z1z0="1.2.3.14.6.2">
+     <ul id_z1z0="1.2.3.14.6.2.2">
+      <li class="active" id_z1z0="1.2.3.14.6.2.2.2">
+       <a class="sVideo" href="http://www.nicovideo.jp/search/" id_z1z0="1.2.3.14.6.2.2.2.1">
+        Videos
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.14.6.2.2.4">
+       <a class="sMylist" href="http://www.nicovideo.jp/mylist_search/" id_z1z0="1.2.3.14.6.2.2.4.1">
+        My List
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.14.6.2.2.6">
+       <a class="sLive" href="http://live.nicovideo.jp/search/" id_z1z0="1.2.3.14.6.2.2.6.1">
+        Live
+       </a>
+      </li>
+     </ul>
+     <form action="http://www.nicovideo.jp/search/" class="sVideo" id="searchForm" id_z1z0="1.2.3.14.6.2.4" method="get">
+      <div id="searchform_container" id_z1z0="1.2.3.14.6.2.4.2">
+       <input id="searchWord" id_z1z0="1.2.3.14.6.2.4.2.2" type="text" value=""/>
+      </div>
+      <input id="searchSubmit" id_z1z0="1.2.3.14.6.2.4.4" type="submit" value=""/>
+     </form>
+    </div>
+    <!-- /#searchFormInner -->
+   </div>
+   <!-- /#searchFormWrap -->
+   <div id="contentsWrap" id_z1z0="1.2.3.14.9">
+    <div class="clearfix" id="contents" id_z1z0="1.2.3.14.9.2">
+     <div id="sideNav" id_z1z0="1.2.3.14.9.2.2">
+      <div id="userStats" id_z1z0="1.2.3.14.9.2.2.2">
+       <a class="sprite registerBtn" href="https://account.nicovideo.jp/register?from=top" id_z1z0="1.2.3.14.9.2.2.2.2" title="Sign Up">
+        <img alt="Sign Up" id_z1z0="1.2.3.14.9.2.2.2.2.1" src="http://uni.res.nimg.jp/img/zero_index/to_member_en-us.png?130702"/>
+       </a>
+       <p id_z1z0="1.2.3.14.9.2.2.2.4">
+        <a class="loginBtn" href="https://account.nicovideo.jp/login" id_z1z0="1.2.3.14.9.2.2.2.4.1">
+         Login
+        </a>
+       </p>
+      </div>
+      <!-- /#userInfo -->
+      <div id="NewServiceList" id_z1z0="1.2.3.14.9.2.2.5">
+       <div id="menuContents" id_z1z0="1.2.3.14.9.2.2.5.2">
+        <div id="menuService" id_z1z0="1.2.3.14.9.2.2.5.2.2">
+         <h5 id_z1z0="1.2.3.14.9.2.2.5.2.2.2">
+          Services
+         </h5>
+         <ul class="service_main" id_z1z0="1.2.3.14.9.2.2.5.2.2.4">
+          <li class="top" id_z1z0="1.2.3.14.9.2.2.5.2.2.4.2">
+           <a class="icon_svc douga" href="http://www.nicovideo.jp/video_top/" id_z1z0="1.2.3.14.9.2.2.5.2.2.4.2.1" title="Videos ">
+            Videos
+           </a>
+          </li>
+         </ul>
+         <ul class="service_sub" id_z1z0="1.2.3.14.9.2.2.5.2.2.6">
+          <li class="top" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.2">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_ent2" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.2.1" style="letter-spacing: -0.1px;" title="Entertainment &amp; Music">
+            Entertainment &amp; Music
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.4">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_life2" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.4.1" title="Life/General/Sports">
+            Life/General/Sports
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.6">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_politics" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.6.1" title="Politics">
+            Politics
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.8">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_tech" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.8.1" title="Science &amp; Tech">
+            Science &amp; Tech
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.10">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_culture2" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.10.1" title="Anime/Art/Games">
+            Anime/Art/Games
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.12">
+           <a class="icon_svc child" href="http://www.nicovideo.jp/video_top/g_other" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.12.1" title="Other">
+            Other
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.6.14">
+           <a class="icon_svc child" href="http://ex.nicovideo.jp/vocaloid" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.14.1" title="VOCALOID">
+            VOCALOID
+            <img alt="NEW!" id_z1z0="1.2.3.14.9.2.2.5.2.2.6.14.1.2" src="http://uni.res.nimg.jp/img/zero_index/icon_new.png" title="NEW!"/>
+           </a>
+          </li>
+         </ul>
+         <ul class="service_main" id_z1z0="1.2.3.14.9.2.2.5.2.2.8">
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.8.2">
+           <a class="icon_svc live" href="http://live.nicovideo.jp/" id_z1z0="1.2.3.14.9.2.2.5.2.2.8.2.1" title="Live ">
+            Live
+           </a>
+          </li>
+         </ul>
+         <ul class="service_sub" id_z1z0="1.2.3.14.9.2.2.5.2.2.10">
+          <li class="top" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.2">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/timetable/" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.2.1" title="Program Guide">
+            Program Guide
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.4">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=common" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.4.1" title="Free">
+            General
+            <!-- for Nico Live category name -->
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.6">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=try" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.6.1" title="Tried it">
+            Tried it
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.8">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=live" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.8.1" title="Games">
+            Games
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.10">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=req" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.10.1" title="Check it out">
+            Check it out
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.12">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=face" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.12.1" title="Video broadcast">
+            Video broadcast
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.14">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/recent?tab=totu" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.14.1" title="Call me">
+            Call me
+           </a>
+          </li>
+          <li id_z1z0="1.2.3.14.9.2.2.5.2.2.10.16">
+           <a class="icon_svc child" href="http://live.nicovideo.jp/nsen/" id_z1z0="1.2.3.14.9.2.2.5.2.2.10.16.1" title="Nsen">
+            Nsen
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div id="trendyTags" id_z1z0="1.2.3.14.9.2.2.7">
+       <h3 class="title_light" id_z1z0="1.2.3.14.9.2.2.7.2">
+        Popular Tags
+       </h3>
+       <ul id_z1z0="1.2.3.14.9.2.2.7.4">
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.2">
+         <a href="/tag/%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.2.1" title="ジョジョ">
+          ジョジョ
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.4">
+         <a href="/tag/APH?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.4.1" title="APH">
+          APH
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.6">
+         <a href="/tag/DJ_Command?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.6.1" title="DJ_Command">
+          DJ_Command
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.8">
+         <a href="/tag/MMD%E3%81%8A%E3%81%9D%E6%9D%BE%E3%81%95%E3%82%93?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.8.1" title="MMDおそ松さん">
+          MMDおそ松さん
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.10">
+         <a href="/tag/Vocaloid_Hall_of_Legends?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.10.1" title="Vocaloid_Hall_of_Legends">
+          Vocaloid_Hall_o...
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.12">
+         <a href="/tag/OtoMAD?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.12.1" title="OtoMAD">
+          OtoMAD
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.14">
+         <a href="/tag/GIFT?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.14.1" title="GIFT">
+          GIFT
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.16">
+         <a href="/tag/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.16.1" title="初音ミク">
+          初音ミク
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.18">
+         <a href="/tag/%E9%9F%93%E5%9B%BD%E7%89%88?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.18.1" title="韓国版">
+          韓国版
+         </a>
+        </li>
+        <li id_z1z0="1.2.3.14.9.2.2.7.4.20">
+         <a href="/tag/%E4%BD%9C%E6%A5%AD%E7%94%A8BGM?ref=ustop_pop_tag" id_z1z0="1.2.3.14.9.2.2.7.4.20.1" title="作業用BGM">
+          作業用BGM
+         </a>
+        </li>
+       </ul>
+      </div>
+      <p id_z1z0="1.2.3.14.9.2.2.9">
+       <a href="http://rd.nicovideo.jp/cc/app/smavitaus" id_z1z0="1.2.3.14.9.2.2.9.1">
+        <img alt="Watch Nico Live on your PS Vita!" id_z1z0="1.2.3.14.9.2.2.9.1.1" src="http://uni.res.nimg.jp//img/index_overseas/bnr/bnr_psvita_us.jpg"/>
+       </a>
+      </p>
+     </div>
+     <!-- /#sideNav -->
+     <div class="clearfix" id="entame_global" id_z1z0="1.2.3.14.9.2.5">
+     </div>
+     <div id="mainContents" id_z1z0="1.2.3.14.9.2.7">
+      <div id="newarrival" id_z1z0="1.2.3.14.9.2.7.2">
+       <div class="title_index" id_z1z0="1.2.3.14.9.2.7.2.2">
+        <h4 id_z1z0="1.2.3.14.9.2.7.2.2.2">
+         Recently Uploaded Videos
+        </h4>
+       </div>
+       <div class="videolist clearfix" id_z1z0="1.2.3.14.9.2.7.2.4">
+        <ul id_z1z0="1.2.3.14.9.2.7.2.4.2">
+         <li id_z1z0="1.2.3.14.9.2.7.2.4.2.2">
+          <p class="newarrival_date" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.2">
+           Added
+           <span class="date_new" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.2.2">
+            3 hours ago
+           </span>
+          </p>
+          <div class="mov_thumb original_language" id_z1z0="1.2.3.14.9.2.7.2.4.2.2.4">
+           <div class="mov_box" id_z1z0="1.2.3.14.9.2.7.2.4.2.2.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm30129168?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.2.4.2.1">
+             <img alt="" id_z1z0="1.2.3.14.9.2.7.2.4.2.2.4.2.1.1" src="http://tn-skr1.smilevideo.jp/smile?i=30129168"/>
+            </a>
+            <span class="mov_length" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.2">
+            </span>
+           </div>
+          </div>
+          <h5 id_z1z0="1.2.3.14.9.2.7.2.4.2.2.6">
+           <a class="watch" href="http://www.nicovideo.jp/watch/sm30129168?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.2.6.1" title="【Oliver】History Maker (Yuri! On Ice OP)【VOCALOIDカバー曲】">
+            【Oliver】History Maker (Yuri! On Ice OP)【VOCALOIDカ...
+           </a>
+          </h5>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.7.2.4.2.4">
+          <p class="newarrival_date" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.2">
+           Added
+           <span class="date_new" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.2.2">
+            3 hours ago
+           </span>
+          </p>
+          <div class="mov_thumb original_language" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.4">
+           <div class="mov_box" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm30129169?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.4.2.1">
+             <img alt="" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.4.2.1.1" src="http://tn-skr2.smilevideo.jp/smile?i=30129169"/>
+            </a>
+            <span class="mov_length" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.2">
+            </span>
+           </div>
+          </div>
+          <h5 id_z1z0="1.2.3.14.9.2.7.2.4.2.4.6">
+           <a class="watch" href="http://www.nicovideo.jp/watch/sm30129169?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.4.6.1" title="えんそ">
+            えんそ
+           </a>
+          </h5>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.7.2.4.2.6">
+          <p class="newarrival_date" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.2">
+           Added
+           <span class="date_new" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.2.2">
+            5 hours ago
+           </span>
+          </p>
+          <div class="mov_thumb original_language" id_z1z0="1.2.3.14.9.2.7.2.4.2.6.4">
+           <div class="mov_box" id_z1z0="1.2.3.14.9.2.7.2.4.2.6.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm30129032?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.6.4.2.1">
+             <img alt="" id_z1z0="1.2.3.14.9.2.7.2.4.2.6.4.2.1.1" src="http://tn-skr1.smilevideo.jp/smile?i=30129032"/>
+            </a>
+            <span class="mov_length" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.2">
+            </span>
+           </div>
+          </div>
+          <h5 id_z1z0="1.2.3.14.9.2.7.2.4.2.6.6">
+           <a class="watch" href="http://www.nicovideo.jp/watch/sm30129032?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.6.6.1" title="DJ Aladdin - It's Going Down">
+            DJ Aladdin - It's Going Down
+           </a>
+          </h5>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.7.2.4.2.8">
+          <p class="newarrival_date" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.2">
+           Added
+           <span class="date_new" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.2.2">
+            5 hours ago
+           </span>
+          </p>
+          <div class="mov_thumb original_language" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4">
+           <div class="mov_box" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm30128960?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.1">
+             <img alt="" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.1.1" src="http://tn-skr1.smilevideo.jp/smile?i=30128960"/>
+            </a>
+            <span class="mov_length" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.4.2.2">
+            </span>
+           </div>
+          </div>
+          <h5 id_z1z0="1.2.3.14.9.2.7.2.4.2.8.6">
+           <a class="watch" href="http://www.nicovideo.jp/watch/sm30128960?ref=ustop_new_video" id_z1z0="1.2.3.14.9.2.7.2.4.2.8.6.1" title="【ミナリイ】少女ふぜゐ【歌ってみた】">
+            【ミナリイ】少女ふぜゐ【歌ってみた】
+           </a>
+          </h5>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div id="translated_videos" id_z1z0="1.2.3.14.9.2.7.4">
+       <div class="title_index" id_z1z0="1.2.3.14.9.2.7.4.2">
+        <h4 id_z1z0="1.2.3.14.9.2.7.4.2.2">
+         Latest Translated Videos
+        </h4>
+       </div>
+       <div class="videolist clearfix" id_z1z0="1.2.3.14.9.2.7.4.4">
+        <ul id_z1z0="1.2.3.14.9.2.7.4.4.2">
+         <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.4.4.2.2">
+          <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.2">
+           <a href="http://www.nicovideo.jp/watch/sm25562130?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.2.2" title="【Wolpis Inc.】I had tried to sing Life is Only Full of Goodbyes【Sponsorship】">
+            <img alt="【Wolpis Inc.】I had tried to sing Life is Only Full of Goodbyes【Sponsorship】" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.2.2.1" src="http://tn-skr3.smilevideo.jp/smile?i=25562130"/>
+           </a>
+          </div>
+          <div class="listItemContent" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.4">
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm25562130?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.4.2.1">
+             【Wolpis Inc.】I had tried to sing Life is Only Full of Goodbyes【Sponsorship】
+            </a>
+           </h5>
+           <p class="itemDescription" id_z1z0="1.2.3.14.9.2.7.4.4.2.2.4.4">
+            Freaking nuts, Wolpis. Also, the text at the beginning is mainly about singing a certain line in ...
+           </p>
+          </div>
+         </li>
+         <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.4.4.2.4">
+          <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.2">
+           <a href="http://www.nicovideo.jp/watch/sm10953843?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.2.2" title="【Kagamine Rin】 Over there 【Original Song】">
+            <img alt="【Kagamine Rin】 Over there 【Original Song】" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=10953843"/>
+           </a>
+          </div>
+          <div class="listItemContent" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.4">
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.4.2">
+            <a href="http://www.nicovideo.jp/watch/sm10953843?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.4.4.2.1">
+             【Kagamine Rin】 Over there 【Original Song】
+            </a>
+           </h5>
+           <p class="itemDescription" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4.4">
+            n/a
+           </p>
+          </div>
+         </li>
+         <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.4.4.2.6">
+          <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.2">
+           <a href="http://www.nicovideo.jp/watch/nm4311659?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.2.2" title="【Kagamine Rin】 especially 【Original Song】">
+            <img alt="【Kagamine Rin】 especially 【Original Song】" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=4311659"/>
+           </a>
+          </div>
+          <div class="listItemContent" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.4">
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.4.2">
+            <a href="http://www.nicovideo.jp/watch/nm4311659?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.6.4.2.1">
+             【Kagamine Rin】 especially 【Original Song】
+            </a>
+           </h5>
+           <p class="itemDescription" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4.4">
+            n/a
+           </p>
+          </div>
+         </li>
+         <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.4.4.2.8">
+          <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.2">
+           <a href="http://www.nicovideo.jp/watch/nm4281100?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.2.2" title="【Kagamine Rin】 rejoice 【Original Song】">
+            <img alt="【Kagamine Rin】 rejoice 【Original Song】" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=4281100"/>
+           </a>
+          </div>
+          <div class="listItemContent" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4">
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4.2">
+            <a href="http://www.nicovideo.jp/watch/nm4281100?ref=ustop_translator_video" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4.2.1">
+             【Kagamine Rin】 rejoice 【Original Song】
+            </a>
+           </h5>
+           <p class="itemDescription" id_z1z0="1.2.3.14.9.2.7.4.4.2.8.4.4">
+            n/a
+           </p>
+          </div>
+         </li>
+        </ul>
+        <p class="link_right" id_z1z0="1.2.3.14.9.2.7.4.4.4">
+         <a class="icon_cur" href="http://ex.nicovideo.jp/translator_info" id_z1z0="1.2.3.14.9.2.7.4.4.4.1">
+          Learn more about translating videos!
+         </a>
+        </p>
+       </div>
+      </div>
+      <div id="feature" id_z1z0="1.2.3.14.9.2.7.6">
+       <h3 class="title_light" id_z1z0="1.2.3.14.9.2.7.6.2">
+        User Recommended Videos
+       </h3>
+       <div class="clearfix" id="uneiOsusume" id_z1z0="1.2.3.14.9.2.7.6.4">
+        <div class="oversea_feature clearfix" id_z1z0="1.2.3.14.9.2.7.6.4.2">
+         <div class="thumb_box" id_z1z0="1.2.3.14.9.2.7.6.4.2.2">
+          <a class="thumb" href="http://rd.nicovideo.jp/cc/ustop_tokushu/99e4cdf2e3b74d1f" id_z1z0="1.2.3.14.9.2.7.6.4.2.2.2">
+           <img alt="" id_z1z0="1.2.3.14.9.2.7.6.4.2.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=6119955"/>
+          </a>
+         </div>
+         <div id_z1z0="1.2.3.14.9.2.7.6.4.2.4">
+          <h3 id_z1z0="1.2.3.14.9.2.7.6.4.2.4.2">
+           <a href="http://rd.nicovideo.jp/cc/ustop_tokushu/99e4cdf2e3b74d1f" id_z1z0="1.2.3.14.9.2.7.6.4.2.4.2.2">
+            Megurine Luka 「Luka Luka ★ Night Fever」【Original Song】
+           </a>
+          </h3>
+          <p id_z1z0="1.2.3.14.9.2.7.6.4.2.4.4">
+           we will never forget you samfee, Rest in peace :')
+          </p>
+         </div>
+        </div>
+        <div class="oversea_feature clearfix" id_z1z0="1.2.3.14.9.2.7.6.4.4">
+         <div class="thumb_box" id_z1z0="1.2.3.14.9.2.7.6.4.4.2">
+          <a class="thumb" href="http://rd.nicovideo.jp/cc/ustop_tokushu/f2b8b91d3563c961" id_z1z0="1.2.3.14.9.2.7.6.4.4.2.2">
+           <img alt="" id_z1z0="1.2.3.14.9.2.7.6.4.4.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=29822304"/>
+          </a>
+         </div>
+         <div id_z1z0="1.2.3.14.9.2.7.6.4.4.4">
+          <h3 id_z1z0="1.2.3.14.9.2.7.6.4.4.4.2">
+           <a href="http://rd.nicovideo.jp/cc/ustop_tokushu/f2b8b91d3563c961" id_z1z0="1.2.3.14.9.2.7.6.4.4.4.2.2">
+            Charles／flower
+           </a>
+          </h3>
+          <p id_z1z0="1.2.3.14.9.2.7.6.4.4.4.4">
+           Cool Song!
+          </p>
+         </div>
+        </div>
+        <div class="oversea_feature clearfix" id_z1z0="1.2.3.14.9.2.7.6.4.6">
+         <div class="thumb_box" id_z1z0="1.2.3.14.9.2.7.6.4.6.2">
+          <a class="thumb" href="http://rd.nicovideo.jp/cc/ustop_tokushu/f7fa21e7966e377f" id_z1z0="1.2.3.14.9.2.7.6.4.6.2.2">
+           <img alt="" id_z1z0="1.2.3.14.9.2.7.6.4.6.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=23541588"/>
+          </a>
+         </div>
+         <div id_z1z0="1.2.3.14.9.2.7.6.4.6.4">
+          <h3 id_z1z0="1.2.3.14.9.2.7.6.4.6.4.2">
+           <a href="http://rd.nicovideo.jp/cc/ustop_tokushu/f7fa21e7966e377f" id_z1z0="1.2.3.14.9.2.7.6.4.6.4.2.2">
+            【MMD】Don't underestimate me just cuz I'm a kid!【JJBA】
+           </a>
+          </h3>
+          <p id_z1z0="1.2.3.14.9.2.7.6.4.6.4.4">
+           its soooo cute! the models are beautiful too!
+          </p>
+         </div>
+        </div>
+        <div class="oversea_feature clearfix" id_z1z0="1.2.3.14.9.2.7.6.4.8">
+         <div class="thumb_box" id_z1z0="1.2.3.14.9.2.7.6.4.8.2">
+          <a class="thumb" href="http://rd.nicovideo.jp/cc/ustop_tokushu/d75e1ca0fc2372ad" id_z1z0="1.2.3.14.9.2.7.6.4.8.2.2">
+           <img alt="" id_z1z0="1.2.3.14.9.2.7.6.4.8.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=2397344"/>
+          </a>
+         </div>
+         <div id_z1z0="1.2.3.14.9.2.7.6.4.8.4">
+          <h3 id_z1z0="1.2.3.14.9.2.7.6.4.8.4.2">
+           <a href="http://rd.nicovideo.jp/cc/ustop_tokushu/d75e1ca0fc2372ad" id_z1z0="1.2.3.14.9.2.7.6.4.8.4.2.2">
+            Hatsune Miku -「Love is War」Original Song
+           </a>
+          </h3>
+          <p id_z1z0="1.2.3.14.9.2.7.6.4.8.4.4">
+           Great Miku Song!
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div id="pickup_global" id_z1z0="1.2.3.14.9.2.7.8">
+       <div class="title_index" id_z1z0="1.2.3.14.9.2.7.8.2">
+        <h4 id_z1z0="1.2.3.14.9.2.7.8.2.2">
+         Niconico Video Selections
+        </h4>
+       </div>
+       <div class="videolist clearfix" id_z1z0="1.2.3.14.9.2.7.8.4">
+        <div class="videolist" id_z1z0="1.2.3.14.9.2.7.8.4.2">
+         <ul id_z1z0="1.2.3.14.9.2.7.8.4.2.2">
+          <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2">
+           <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2.2">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/016b4767eaa37d12" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2.2.2" title="Robot Puzzle Solver!">
+             <img alt="Robot Puzzle Solver!" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=28160788"/>
+            </a>
+           </div>
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2.4">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/016b4767eaa37d12" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.2.4.2">
+             Robot Puzzle Solver!
+            </a>
+           </h5>
+          </li>
+          <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4">
+           <div class="mov_thumb translated" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.2">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/cd360c9bd6131a30" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.2.2" title="This song will leave you with a nice fuzzy feeling after watching. ">
+             <img alt="This song will leave you with a nice fuzzy feeling after watching. " id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=28294159"/>
+            </a>
+           </div>
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.4">
+            <span class="label_translation" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.4.1">
+             Translated
+            </span>
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/cd360c9bd6131a30" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.4.4.3">
+             This song will leave you with a nice fuzzy feeling after watching.
+            </a>
+           </h5>
+          </li>
+          <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6">
+           <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6.2">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/3e9a7e2c976946e6" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6.2.2" title="Just one paw away!">
+             <img alt="Just one paw away!" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=25826831"/>
+            </a>
+           </div>
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6.4">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/3e9a7e2c976946e6" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.6.4.2">
+             Just one paw away!
+            </a>
+           </h5>
+          </li>
+          <li class="listItem clearfix" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8">
+           <div class="mov_thumb" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8.2">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/37e86d948aba6a69" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8.2.2" title="A simple guide to making doughnuts! ">
+             <img alt="A simple guide to making doughnuts! " id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=21016000"/>
+            </a>
+           </div>
+           <h5 class="itemTitle" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8.4">
+            <a href="http://rd.nicovideo.jp/cc/ustop_osusume/37e86d948aba6a69" id_z1z0="1.2.3.14.9.2.7.8.4.2.2.8.4.2">
+             A simple guide to making doughnuts!
+            </a>
+           </h5>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div id="index_user_live" id_z1z0="1.2.3.14.9.2.7.10">
+       <div class="contents_box" id_z1z0="1.2.3.14.9.2.7.10.2">
+        <div class="title_live" id_z1z0="1.2.3.14.9.2.7.10.2.2">
+         <h4 id_z1z0="1.2.3.14.9.2.7.10.2.2.2">
+          Live User Broadcasts
+         </h4>
+        </div>
+        <div class="index_live_item clearfix" id_z1z0="1.2.3.14.9.2.7.10.2.4">
+         <a class="index_live_thumb" href="http://live.nicovideo.jp/watch/lv283275349?ref=ustop_user_live" id_z1z0="1.2.3.14.9.2.7.10.2.4.2">
+          <img id_z1z0="1.2.3.14.9.2.7.10.2.4.2.1" src="http://icon.nimg.jp/community/243/co2432300.jpg?1479113795"/>
+         </a>
+         <div class="index_live_summary" id_z1z0="1.2.3.14.9.2.7.10.2.4.4">
+          <p class="live_schedule" id_z1z0="1.2.3.14.9.2.7.10.2.4.4.2">
+           <span class="label_community" id_z1z0="1.2.3.14.9.2.7.10.2.4.4.2.1">
+            Community
+           </span>
+           12/02, 03:30-
+          </p>
+          <h5 id_z1z0="1.2.3.14.9.2.7.10.2.4.4.4">
+           <a href="http://live.nicovideo.jp/watch/lv283275349?ref=ustop_user_live" id_z1z0="1.2.3.14.9.2.7.10.2.4.4.4.1">
+            【ファミコンクラシック制覇】グラディウス【5作目】
+           </a>
+          </h5>
+          <p class="live_description" id_z1z0="1.2.3.14.9.2.7.10.2.4.4.6">
+           クリア条件：1周クリア
+【放送裏】youtube：https://www.youtube.com/channel/UChOg4x1i0H9JsqVzOS-VYq...
+          </p>
+         </div>
+        </div>
+        <p class="link_right" id_z1z0="1.2.3.14.9.2.7.10.2.6">
+         <a class="icon_cur" href="http://live.nicovideo.jp/?ref=ustop_top_live" id_z1z0="1.2.3.14.9.2.7.10.2.6.1">
+          Nico Live
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- /#mainContents -->
+     <div id="sideContents" id_z1z0="1.2.3.14.9.2.10">
+      <div id="nicoNews" id_z1z0="1.2.3.14.9.2.10.2">
+       <div class="contents_box" id_z1z0="1.2.3.14.9.2.10.2.2">
+        <div class="title_index" id_z1z0="1.2.3.14.9.2.10.2.2.2">
+         <h4 id_z1z0="1.2.3.14.9.2.10.2.2.2.2">
+          Nico Blog
+         </h4>
+        </div>
+        <ul class="link_list" id_z1z0="1.2.3.14.9.2.10.2.2.4">
+         <li id_z1z0="1.2.3.14.9.2.10.2.2.4.2">
+          <a href="http://blog.nicovideo.jp/en_info/2016/11/post-064941.html" id_z1z0="1.2.3.14.9.2.10.2.2.4.2.1" title="Nov 16 19">
+           Nico Live Maintenance: 6 am ～ 8:30 am (JST...
+          </a>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.2.2.4.4">
+          <a href="http://blog.nicovideo.jp/en_info/2016/11/post-064758.html" id_z1z0="1.2.3.14.9.2.10.2.2.4.4.1" title="Nov 09 17">
+           [Under Examination] Uploader No-No Settings...
+          </a>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.2.2.4.6">
+          <a href="http://blog.nicovideo.jp/en_info/2016/10/post-064240.html" id_z1z0="1.2.3.14.9.2.10.2.2.4.6.1" title="Oct 19 22">
+           Nico Live Maintenance: Oct  27th (Thu)　6 a...
+          </a>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.2.2.4.8">
+          <a href="http://blog.nicovideo.jp/en_info/2016/10/post-063959.html" id_z1z0="1.2.3.14.9.2.10.2.2.4.8.1" title="Oct 05 23">
+           【Notice】NicoPal Termination /  "Favorite"...
+          </a>
+         </li>
+        </ul>
+        <p class="link_right" id_z1z0="1.2.3.14.9.2.10.2.2.6">
+         <a class="icon_cur" href="http://blog.nicovideo.jp/en_info/" id_z1z0="1.2.3.14.9.2.10.2.2.6.1" target="_blank">
+          List
+         </a>
+        </p>
+       </div>
+      </div>
+      <!-- /#nicoNews -->
+      <div class="clarfix" id="sns_widget" id_z1z0="1.2.3.14.9.2.10.6">
+       <!-- facebook -->
+       <div id="facebookWidget" id_z1z0="1.2.3.14.9.2.10.6.4">
+        <iframe allowtransparency="true" frameborder="0" id_z1z0="1.2.3.14.9.2.10.6.4.2" scrolling="no" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fniconicocom&amp;width=350&amp;height=427&amp;show_faces=false&amp;colorscheme=light&amp;stream=true&amp;border_color=ccc&amp;header=true" style="border:none; overflow:hidden; width:350px; height:427px;">
+        </iframe>
+       </div>
+       <div id="twitterWidget" id_z1z0="1.2.3.14.9.2.10.6.6">
+        <a class="twitter-follow-button" data-lang="en" data-show-count="false" data-size="large" data-width="180px" href="https://twitter.com/niconicoen" id_z1z0="1.2.3.14.9.2.10.6.6.2">
+         Follow @ niconicoen
+        </a>
+       </div>
+       <script id_z1z0="1.2.3.14.9.2.10.6.8">
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+       </script>
+      </div>
+      <div id="ranking_area" id_z1z0="1.2.3.14.9.2.10.8">
+       <div class="title_index" id_z1z0="1.2.3.14.9.2.10.8.2">
+        <h4 id_z1z0="1.2.3.14.9.2.10.8.2.2">
+         Ranking
+        </h4>
+       </div>
+       <div class="sub_movlist" id_z1z0="1.2.3.14.9.2.10.8.4">
+        <ul id_z1z0="1.2.3.14.9.2.10.8.4.2">
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.2">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30124096?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=30124096"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4.2">
+             <span class="rank rank1" id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2.2.2.1">
+              1:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30124096?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4.2.3">
+              【Wolpis Inc.】 I had tried to sing Crescent Moon Resize【Sponsorsh...
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4.4">
+             Saying anything that's not beyond「He...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.2.2.4.6.1">
+              Nov 27, 02:30 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.4">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.2">
+            <a href="http://www.nicovideo.jp/watch/so30122895?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.2.2.1" src="http://tn-skr4.smilevideo.jp/smile?i=30122895"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4.2">
+             <span class="rank rank2" id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2.2.2.1">
+              2:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/so30122895?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4.2.3">
+              月曜日のたわわ　その8
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4.4">
+             月曜日のたわわ その8「絶対によく効く...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.4.2.4.6.1">
+              Nov 27, 01:00 PM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.6">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm29850274?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.2.2.1" src="http://tn-skr3.smilevideo.jp/smile?i=29850274"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4.2">
+             <span class="rank rank3" id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2.2.2.1">
+              3:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm29850274?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4.2.3">
+              【AMU】恋ダンス 踊ってみた【逃げ恥】
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4.4">
+             ガッキーさんの恋ダンス踊りました！！...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.6.2.4.6.1">
+              Oct 16, 07:17 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.8">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30123509?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.2.2.1" src="http://tn-skr2.smilevideo.jp/smile?i=30123509"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4.2">
+             <span class="rank rank4" id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2.2.2.1">
+              4:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30123509?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4.2.3">
+              「ベルセルク」を歌ってみた【グリリ】
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4.4">
+             全てが狂った世界だ( ｀▽´)っ◆かっこい...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.8.2.4.6.1">
+              Nov 26, 10:06 PM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.10">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30118724?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=30118724"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4.2">
+             <span class="rank rank5" id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2.2.2.1">
+              5:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30118724?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4.2.3">
+              【Refreshingly】I tried to sing Delusion Sentimentality Compensatio...
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4.4">
+             『DeluSou Sentimentality Compensation...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.10.2.4.6.1">
+              Nov 26, 03:03 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.12">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30112305?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.2.2.1" src="http://tn-skr2.smilevideo.jp/smile?i=30112305"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.2">
+             <span class="rank rank6" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.2.1">
+              6:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30112305?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.2.3">
+              【艦これ】 かんむす⚓ハリケーン 【劇場版公開記念】
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.4">
+             初めまして、秋イベの進捗どうですか　3...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.12.2.4.6.1">
+              Nov 25, 07:00 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.14">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30124198?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.2.2.1" src="http://tn-skr3.smilevideo.jp/smile?i=30124198"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.2">
+             <span class="rank rank7" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.2.1">
+              7:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30124198?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.2.3">
+              【神威がくぽ・巡音ルカ】more lies【オリジナル】
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.4">
+             Music &amp; Lyrics : maya （mylist/133703...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.14.2.4.6.1">
+              Nov 26, 11:45 PM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.16">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30065944?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.2.2.1" src="http://tn-skr1.smilevideo.jp/smile?i=30065944"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.2">
+             <span class="rank rank8" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.2.1">
+              8:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30065944?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.2.3">
+              【えみりー】みてみて☆こっちっち 踊ってみた | ポケモンサンムーン発売
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.4">
+             みなさんおはよー！！　今日は新しい「...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.16.2.4.6.1">
+              Nov 17, 05:58 PM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.18">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30117694?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.2.2.1" src="http://tn-skr3.smilevideo.jp/smile?i=30117694"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.2">
+             <span class="rank rank9" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.2.1">
+              9:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30117694?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.2.3">
+              妄想感傷代償連盟　歌ってみた【鹿乃】
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.4">
+             「その続きは？」DECO*27 さんの御本家...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.18.2.4.6.1">
+              Nov 26, 01:00 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.8.4.2.20">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2">
+           <div class="sub_thumb" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.2">
+            <a href="http://www.nicovideo.jp/watch/sm30085509?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.2.2">
+             <img alt="" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.2.2.1" src="http://tn-skr2.smilevideo.jp/smile?i=30085509"/>
+            </a>
+           </div>
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4">
+            <h5 id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.2">
+             <span class="rank rank10" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.2.1">
+              10:
+             </span>
+             <a class="watch" href="http://www.nicovideo.jp/watch/sm30085509?ref=ustop_localranking_video" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.2.3">
+              なんつってっつっちゃった☆
+             </a>
+            </h5>
+            <p id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.4">
+             つっちゃった曲：REFLEC BEAT groovin'!...
+            </p>
+            <p class="sub_date" id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.6">
+             <span id_z1z0="1.2.3.14.9.2.10.8.4.2.20.2.4.6.1">
+              Nov 25, 01:00 AM
+             </span>
+            </p>
+           </div>
+          </div>
+         </li>
+        </ul>
+        <p class="link_right" id_z1z0="1.2.3.14.9.2.10.8.4.4">
+         <a class="icon_cur" href="/local_ranking?ref=ustop_localranking_page" id_z1z0="1.2.3.14.9.2.10.8.4.4.1">
+          Ranking
+         </a>
+        </p>
+       </div>
+      </div>
+      <div id="ranking_global" id_z1z0="1.2.3.14.9.2.10.10">
+       <div class="title_index" id_z1z0="1.2.3.14.9.2.10.10.2">
+        <h4 id_z1z0="1.2.3.14.9.2.10.10.2.2">
+         Global Ranking
+        </h4>
+       </div>
+       <div class="sub_movlist" id_z1z0="1.2.3.14.9.2.10.10.4">
+        <ul id_z1z0="1.2.3.14.9.2.10.10.4.2">
+         <li id_z1z0="1.2.3.14.9.2.10.10.4.2.2">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2">
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2.2">
+            <h5 id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2.2.2">
+             <span class="rank rank1" id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2.2.2.1">
+              1:
+             </span>
+             <a class="watch" href="/watch/sm30085509?ref=ustop_globalranking_video" id_z1z0="1.2.3.14.9.2.10.10.4.2.2.2.2.2.3">
+              なんつってっつっちゃった☆
+             </a>
+            </h5>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.10.4.2.4">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2">
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2.2">
+            <h5 id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2.2.2">
+             <span class="rank rank2" id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2.2.2.1">
+              2:
+             </span>
+             <a class="watch" href="/watch/so30092429?ref=ustop_globalranking_video" id_z1z0="1.2.3.14.9.2.10.10.4.2.4.2.2.2.3">
+              信長の忍び 第8話「歴史に人あり」
+             </a>
+            </h5>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.10.4.2.6">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2">
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2.2">
+            <h5 id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2.2.2">
+             <span class="rank rank3" id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2.2.2.1">
+              3:
+             </span>
+             <a class="watch" href="/watch/sm30124865?ref=ustop_globalranking_video" id_z1z0="1.2.3.14.9.2.10.10.4.2.6.2.2.2.3">
+              【VOICEROID実況】弦巻マキと結月ゆかりの未確認ゲーム日和　#32
+             </a>
+            </h5>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.10.4.2.8">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2">
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2.2">
+            <h5 id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2.2.2">
+             <span class="rank rank4" id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2.2.2.1">
+              4:
+             </span>
+             <a class="watch" href="/watch/sm8134546?ref=ustop_globalranking_video" id_z1z0="1.2.3.14.9.2.10.10.4.2.8.2.2.2.3">
+              【Drew It】Futae no Kiwami + Konayuki【MAD】
+             </a>
+            </h5>
+           </div>
+          </div>
+         </li>
+         <li id_z1z0="1.2.3.14.9.2.10.10.4.2.10">
+          <div class="sub_movcontainer clearfix" id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2">
+           <div class="sub_summary" id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2.2">
+            <h5 id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2.2.2">
+             <span class="rank rank5" id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2.2.2.1">
+              5:
+             </span>
+             <a class="watch" href="/watch/so30105856?ref=ustop_globalranking_video" id_z1z0="1.2.3.14.9.2.10.10.4.2.10.2.2.2.3">
+              はがねオーケストラ　第8話「マキさんとは絶交です」
+             </a>
+            </h5>
+           </div>
+          </div>
+         </li>
+        </ul>
+        <p class="link_right" id_z1z0="1.2.3.14.9.2.10.10.4.4">
+         <a class="icon_cur" href="/ranking?ref=ustop_globalranking_page" id_z1z0="1.2.3.14.9.2.10.10.4.4.1">
+          Ranking
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+     <!-- /#sideContents -->
+    </div>
+    <!-- /#contents -->
+   </div>
+   <!-- /#contentsWrap -->
+   <div class="sidewallAd" id="web_pc_sidewall_left" id_z1z0="1.2.3.14.12" style="width: 0px;">
+   </div>
+   <div class="sidewallAd" id="web_pc_sidewall_right" id_z1z0="1.2.3.14.14" style="width: 0px;">
+   </div>
+   <script id_z1z0="1.2.3.14.16" type="text/javascript">
+    &lt;!--
+	(function(){
+		var segment = Ads.get_segment_object();
+		Ads.Sidewall.setParameters({
+			zoneIds: [724, 725],
+			locations: ['web_pc_sidewall_left', 'web_pc_sidewall_right'],
+			segments: segment,
+			contentsWidth: 996
+		});
+		Ads.Sidewall.invoke();
+	})();
+	//--&gt;
+   </script>
+  </div>
+  <div class="toPageTopWrap" id_z1z0="1.2.3.16">
+   <div class="inner" id_z1z0="1.2.3.16.2">
+    <a class="toPageTopBtn" href="#" id_z1z0="1.2.3.16.2.2">
+     <span id_z1z0="1.2.3.16.2.2.1">
+     </span>
+     Back to Top
+    </a>
+   </div>
+  </div>
+  <!-- /.toPageTop -->
+  <div id="footerWrap" id_z1z0="1.2.3.19">
+   <div id="footerNav" id_z1z0="1.2.3.19.2">
+    <div class="outer" id_z1z0="1.2.3.19.2.2">
+     <h3 id_z1z0="1.2.3.19.2.2.2">
+      About Niconico
+     </h3>
+     <ul class="footerNavList" id_z1z0="1.2.3.19.2.2.4">
+      <li id_z1z0="1.2.3.19.2.2.4.2">
+       <a href="http://www.nicovideo.jp/top_service/" id_z1z0="1.2.3.19.2.2.4.2.1">
+        Niconico Services
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.2.4.4">
+       <a href="http://www.nicovideo.jp/rss" id_z1z0="1.2.3.19.2.2.4.4.1">
+        RSS Updates
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.2.4.6">
+       <a href="http://license-search.nicovideo.jp/" id_z1z0="1.2.3.19.2.2.4.6.1">
+        Audio Search (Japanese only)
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.2.4.8">
+       <a href="http://ex.nicovideo.jp/base/declaration" id_z1z0="1.2.3.19.2.2.4.8.1">
+        Announcements
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.2.4.10">
+       <a href="http://dwango.co.jp/" id_z1z0="1.2.3.19.2.2.4.10.1" target="_blank">
+        Operating Company
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="outer" id_z1z0="1.2.3.19.2.4">
+     <h3 id_z1z0="1.2.3.19.2.4.2">
+      Notices
+     </h3>
+     <ul class="footerNavList" id_z1z0="1.2.3.19.2.4.4">
+      <li id_z1z0="1.2.3.19.2.4.4.2">
+       <a href="http://blog.nicovideo.jp/en_info/" id_z1z0="1.2.3.19.2.4.4.2.1">
+        Nico Blog
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="outer" id_z1z0="1.2.3.19.2.6">
+     <h3 id_z1z0="1.2.3.19.2.6.2">
+      Inquire
+     </h3>
+     <ul class="footerNavList" id_z1z0="1.2.3.19.2.6.4">
+      <li id_z1z0="1.2.3.19.2.6.4.2">
+       <a href="http://ex.nicovideo.jp/help" id_z1z0="1.2.3.19.2.6.4.2.1">
+        Help Home Page
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.4">
+       <a href="https://secure.nicovideo.jp/secure/support_form_os" id_z1z0="1.2.3.19.2.6.4.4.1">
+        Send Feedback
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.6">
+       <a href="http://rcp-smile.nicovideo.jp/static/rule/" id_z1z0="1.2.3.19.2.6.4.6.1">
+        Copyright Holders (Japanese only)
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.8">
+       <a href="http://ch.nicovideo.jp/start" id_z1z0="1.2.3.19.2.6.4.8.1">
+        Create Channel
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.10">
+       <a href="http://sales.ads.nicovideo.jp/" id_z1z0="1.2.3.19.2.6.4.10.1">
+        Advertise
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.12">
+       <a href="https://secure.nicovideo.jp/form/press" id_z1z0="1.2.3.19.2.6.4.12.1">
+        Press
+       </a>
+      </li>
+      <li id_z1z0="1.2.3.19.2.6.4.14">
+       <a href="http://info.dwango.co.jp/recruit/" id_z1z0="1.2.3.19.2.6.4.14.1">
+        Work with us! (Japanese only)
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div id="copyright" id_z1z0="1.2.3.19.4">
+    <div class="setCountryOuter" id_z1z0="1.2.3.19.4.2">
+     <ul class="setCountry" id_z1z0="1.2.3.19.4.2.2">
+      <li class="selector" id="area" id_z1z0="1.2.3.19.4.2.2.2">
+       <p id_z1z0="1.2.3.19.4.2.2.2.2">
+        Region:
+       </p>
+       <div class="outer" id_z1z0="1.2.3.19.4.2.2.2.4">
+        <p class="trigger" id="areaTrigger" id_z1z0="1.2.3.19.4.2.2.2.4.2">
+         <span class="currentType US" id_z1z0="1.2.3.19.4.2.2.2.4.2.2">
+          United States
+         </span>
+         <span class="arrow" id_z1z0="1.2.3.19.4.2.2.4.4.2.4">
+         </span>
+        </p>
+        <div class="expandContainer" id="areaExpandContainer" id_z1z0="1.2.3.19.4.2.2.2.4.4">
+         <a class="selectType JP" href="#" id_z1z0="1.2.3.19.4.2.2.2.4.4.2" onclick="document.site_footer_setcountry.area.value='JP';return Nico.CommonFooter.setCountry();">
+          Japan
+         </a>
+         <a class="selectType TW" href="#" id_z1z0="1.2.3.19.4.2.2.2.4.4.4" onclick="document.site_footer_setcountry.area.value='TW';return Nico.CommonFooter.setCountry();">
+          Taiwan
+         </a>
+        </div>
+       </div>
+      </li>
+      <li class="selector" id="lang" id_z1z0="1.2.3.19.4.2.2.4">
+       <p id_z1z0="1.2.3.19.4.2.2.4.2">
+        Language:
+       </p>
+       <div class="outer" id_z1z0="1.2.3.19.4.2.2.4.4">
+        <p class="trigger" id="langTrigger" id_z1z0="1.2.3.19.4.2.2.4.4.2">
+         <span class="currentType" id_z1z0="1.2.3.19.4.2.2.4.4.2.2">
+          English (US)
+         </span>
+         <span class="arrow" id_z1z0="1.2.3.19.4.2.2.4.4.2.4">
+         </span>
+        </p>
+        <div class="expandContainer" id="langExpandContainer" id_z1z0="1.2.3.19.4.2.2.4.4.4">
+         <a class="selectType ja-jp" href="#" id_z1z0="1.2.3.19.4.2.2.4.4.4.2" onclick="document.site_footer_setcountry.language.value='ja-jp';return Nico.CommonFooter.setCountry();">
+          日本語
+         </a>
+         <a class="selectType zh-tw" href="#" id_z1z0="1.2.3.19.4.2.2.4.4.4.4" onclick="document.site_footer_setcountry.language.value='zh-tw';return Nico.CommonFooter.setCountry();">
+          中文 (繁體)
+         </a>
+        </div>
+       </div>
+      </li>
+     </ul>
+     <form action="http://www.nicovideo.jp/api/setcountry" id="site_footer_setcountry" id_z1z0="1.2.3.19.4.2.4" method="post" name="site_footer_setcountry">
+      <input id_z1z0="1.2.3.19.4.2.4.2" name="area" type="hidden" value=""/>
+      <input id_z1z0="1.2.3.19.4.2.4.4" name="language" type="hidden" value=""/>
+     </form>
+    </div>
+    <p class="figureWrap" id_z1z0="1.2.3.19.4.4">
+     <img alt="Licensed by JASRAC" id_z1z0="1.2.3.19.4.4.2" src="http://uni.res.nimg.jp/img/base/foot/logo_jasrac.png"/>
+     <span id_z1z0="1.2.3.19.4.4.3">
+      JASRAC許諾番号：9013388001Y45123
+     </span>
+     <small id_z1z0="1.2.3.19.4.4.5">
+      ©DWANGO Co., Ltd.
+     </small>
+    </p>
+   </div>
+  </div>
+  <!-- /#footerWrap -->
+  <script async="" charset="utf-8" defer="defer" id_z1z0="1.2.3.22" src="http://notification.nicovideo.jp/res/notify.js?140901" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" defer="defer" id_z1z0="1.2.3.24" src="http://embed.enquete.nicovideo.jp/static/js/enquete.js" type="text/javascript">
+  </script>
+ </body>
+</html>

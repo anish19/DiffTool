@@ -1,0 +1,9 @@
+{   'diff_attr': [],
+    'diff_ele': {   'comp': [   {   '1.2.3.6.4.4.2.5.2.1': 'window.onReadyRun.push(function() {\n\t\tjQuery.browserDownloads = {\n\t\t\tdownlo...'},
+                                {   '1.2.3.7.1': '<img height="0" id="batBeacon0.13699349027137275" src="http://bat.r.msn.com...'},
+                                {   '1.2.3.6.4.4.2.5.2': '<script type="text/javascript">\n\twindow.onReadyRun.push(function() {\n\t\tjQue...'},
+                                {   '1.2.3.7.2': '<img height="0" id="batBeacon0.5510860356757735" src="http://bat.bing.com/a...'}],
+                    'ref': [   {   '1.2.3.6.4.4.2.5.2.1': 'window.onReadyRun.push(function() {\n\t\tjQuery.browserDownloads = {\n\t\t\tdownlo...'},
+                               {   '1.2.3.7.2': '<img height="0" id="batBeacon0.35583102905841213" src="http://bat.bing.com/...'},
+                               {   '1.2.3.7.1': '<img height="0" id="batBeacon0.03511407020855295" src="http://bat.r.msn.com...'},
+                               {   '1.2.3.6.4.4.2.5.2': '<script type="text/javascript">\n\twindow.onReadyRun.push(function() {\n\t\tjQue...'}]}}
