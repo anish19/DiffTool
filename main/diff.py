@@ -91,9 +91,11 @@ class PageTreeDiff(object):
         self.__add_id(self.ref_tree.html, self.comp_tree.html)
 
         if flag == 0:
+            #for diff between ref_tree and comp_tree
             ref_file = codecs.open("../files/" + self.folder + "ref_tree.html", "w+", "UTF-8")
             comp_file = codecs.open("../files/" + self.folder + "comp_tree.html", "w+", "UTF-8")
         else:
+            #for diff between ref2_tree and proxy_tree
             ref_file = codecs.open("../files/" + self.folder + "ref2_tree.html", "w+", "UTF-8")
             comp_file = codecs.open("../files/" + self.folder + "proxy_tree.html", "w+", "UTF-8")
 
