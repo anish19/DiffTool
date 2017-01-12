@@ -26,6 +26,8 @@ def main():
     for site in site_list:
         print i," ",site ," :"
         i +=1
+
+        #create folder name
         name = site.split('.')
         if len(name) == 3:
             name = name[1]+"_"+name[2]

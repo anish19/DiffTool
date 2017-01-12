@@ -1,3 +1,6 @@
+--Please Download this file and open in sublime text to view with proper formatting and indentation--
+
+
 DIFF TOOL
 =========
 
@@ -117,14 +120,16 @@ CLASSES
 1. Grab 
 	The purpose of this class is to grab the required content from the internet. It grabs the complete webpage i.e., both static and dynamic content. Selenium webdriver is used to load the page in Mozilla Firefox. After opening the page in firefox the driver waits for 5 seconds and captures the loaded version of the page. Before returning it quits firefox.
 
+	The constructor takes the URL of the page to visit as argument.
+
 	Grab Class has 2 methods-
 
 	1. get_dynamic_content(path) - Captures the page content directly, without going through a proxy.
-		Argumets- path: the url of the page to be captured.
+		Argumets- path: the path to store the visited page
 		Returns - complete page content as a string.
 
 	2. get_dynamic_content_via_proxy(path, proxy_ip, proxy_port): - Captures the page content via a proxy.
-		Argumets- path: the url of the page to be captured.
+		Argumets- path: the path to store the visited page
 					proxy_ip: the IP address of the proxy.
 					proxy_port: the port of the proxy.
 		Returns - complete page content as a string.
@@ -183,8 +188,29 @@ CLASSES
 
 DESIGN
 ------
+This section will have a description of the example proxytest.py. Using this example the complete funtioning and usage of diff tool will be expalined.
 
+In proxytest.py we use one proxy server with a list of websites to run the diff tool. The proxy can be changed to a list that we go oever sequencially and run the algorithm.
+We run the algorithm on each website one after the other and generate the required files in the appropriate folders.
 
+1. First we create a folder name.
+
+2. Visit the page using grab to obtain visit1.html.
+3. Create pagetree from visit1.html using pagetree class.
+3. Sleep for 5 seconds to give the page enough time to change.
+4. Visit the page again to get visit2.html.
+5. Create pagetree from visit2.html using pagetree class.
+6. Get diff between visit1 and visit2 using diff class.
+7. Using the list returned by diff.find_diff() create a base_diff_json.json diff and save it for record.
+
+8. Visit page again to get the latest versino of the page using grab class to get revisit1.html
+9. Create pagetree from revisit1.html using pagetree class.
+10. Visit page via proxy this time to get visit3.html.
+11. Create pagetree from visit3.html using pagetree class.
+12. Get diff between revisit1.html and visit3.html using diff class.
+13. Using the list returned by diff.find_diff() create a proxy_diff_json.json diff and save it for record.
+
+14. From base_diff_json.json and proxy_diff_json.json create final_diff_json.json. This is done by ignoring the elements from base_diff_json in proxy_diff_json.
 
 
 ALGORITHM
@@ -196,7 +222,15 @@ ALGORITHM
 
 
 
+ADDITIONAL POINTS
+-----------------
+1. Always use the complete web address-
+	Use https://www.google.com and not www.google.com.
 
+
+FUTURE WORK
+-----------
+1. Exception handling for selenium when page time outs or takes too long to load. Possibly other excpeitons too that havent been encountered yet.
 
 
 
